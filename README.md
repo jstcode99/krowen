@@ -1,22 +1,10 @@
-# create-svelte
+# Krowen page
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-bun create svelte@latest
-
-# create a new project in my-app
-bun create svelte@latest my-app
-```
+Created with [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
 ## Developing
 
-Once you've created a project and installed dependencies with `bun install` (or `bun install` or `yarn` or `npm`), start a development server:
+First installed dependencies with `bun install` (or `bun install` or `yarn` or `npm`), start a development server:
 
 ```bash
 bun run dev
