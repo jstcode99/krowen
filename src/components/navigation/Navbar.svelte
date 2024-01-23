@@ -14,7 +14,7 @@
 </script>
 
 <nav class="bg-black">
-    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+    <div class="max-w-7xl mx-auto px-6 py-4 sm:px-10 lg:px-10">
         <div class="flex items-center justify-between h-18">
             <div class="flex items-center">
                 <div class="flex-shrink-0">
@@ -26,7 +26,7 @@
                     {#each links as link (link.id)}
                         <a 
                             href={link.href}
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-k-green px-3 py-2 rounded-md text-sm font-medium"
                         >
                         {link.name}
                         </a>
