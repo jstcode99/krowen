@@ -3,12 +3,12 @@
       <div class="w-full flex justify-center content-center mb-4">
         <button
           type="button"
-          class="text-dark bg-transparent
+          class="text-light
                   hover:scale-110 transform-gpu focus:outline-none
                   focus:ring-4 focus:ring-gray-300 font-medium
-                  rounded-full text-sm px-5 py-2 me-2 mb-2
-                dark:bg-k-green dark:border-gray-00 shadow-lg shadow-green-500/50
-                  flex items-center justify-center gap-x-2"
+                  rounded-full px-5 py-2 me-2 mb-2
+                bg-k-green dark:bg-k-green dark:border-gray shadow-lg
+                  flex items-center justify-center gap-x-2 text-md"
         >
           Contactanos
           <svg
@@ -28,22 +28,21 @@
       </div>
       <div class="hidden sm:mb-8 sm:flex sm:justify-center">
         <div
-          class="relative rounded-full px-3 py-1 text-sm leading-6 border-white border-2
+          class="relative rounded-full px-3 py-1 text-sm leading-6 border-black dark:border-white border-1
           dark:text-gray-400 ring-1 ring-gray-900/10 hover:ring-gray-900/20 hover:scale:110"
         >
           Announcing our next round of funding.
-          <a href="/" class="font-semibold text-k-green hover:scale-110">
+          <a href="/" class="font-semibold text-k-green hover:underline">
             <span aria-hidden="true"></span>Read more<span aria-hidden="true">&rarr;</span></a
           >
         </div>
       </div>
       <div class="text-center">
-        <h1 class="text-4xl font-bold tracking-tight dark:text-white sm:text-6xl">
-          Data to enrich your online business
+        <h1 class="text-6xl font-bold tracking-tight dark:text-white lg:text-7xl sm:text-6xl">
+          Creamos tu <span class='text-k-green'>App</span> a la medida.
         </h1>
         <p class="mt-6 text-lg leading-8 dark:text-gray-400">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+          Realizamos disenos a la medida, o en base sistemas previos, para solucionar tus problemas y automatizar tareas o procesos complejos.
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
           <a href="/" class="text-sm font-semibold leading-6 dark:text-white hover:scale-110"
@@ -51,15 +50,6 @@
           >
         </div>
       </div>
-    </div>
-    <div
-      class="fixed inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-      aria-hidden="true"
-    >
-      <div
-        class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#93D500] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-      ></div>
     </div>
   </div>
   

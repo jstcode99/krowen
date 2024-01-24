@@ -1,0 +1,62 @@
+<script>
+  import Input from "../ui/Input.svelte";
+  import VectorGlobo from "@vectors/VectorGlobo.svelte";
+</script>
+
+<div class="w-full px-6 lg:px-8 bg-k-gray-dark">
+  <div class="mx-auto max-w-2xl py-32 sm:py-28 lg:py-26 flex flex-col gap-y-5">
+    <div class="animate-pulse flex justify-center content-center bg-pr">
+      <VectorGlobo />
+    </div>
+    <div class="text-left">
+      <h2 class="text-5xl font-bold tracking-tight text-white sm:text-6xl">
+        Get In Touch
+      </h2>
+      <p class="mt-6 text-lg leading-8 text-white">
+        Company IT is an agency company that provides professional IT services
+        for entrepreneurs and companies around the world.
+      </p>
+    </div>
+    <div class="w-full flex justify-center content-center">
+      <form class="w-full flex flex-col">
+        <div class="mb-6">
+          <Input
+            value={""}
+            type="text"
+            name="email"
+            placeholder="your-email@email.com"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <Input
+            value={""}
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <Input
+            value={""}
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <Input
+            value={""}
+            type="textarea"
+            name="message"
+            placeholder="Message"
+            required
+          />
+        </div>
+        <div class="flex items-start mb-6"></div>
+      </form>
+    </div>
+  </div>
+</div>
