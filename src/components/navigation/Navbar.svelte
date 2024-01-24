@@ -11,8 +11,8 @@
 
   const links = [
     { id: 1, name: "Home", href: "/" },
-    { id: 2, name: "About", href: "/about" },
-    { id: 3, name: "Services", href: "/service" },
+    { id: 3, name: "Services", href: "/services" },
+    { id: 2, name: "About", href: "/about-us" },
     { id: 4, name: "Contact", href: "/contact" },
   ];
 
@@ -67,7 +67,7 @@
             class="text-black dark:text-white
                 focus:outline-none focus:ring-4 font-medium
                 rounded-lg text-sm px-5 py-2.5 me-2 mb-2
-              border-black dark:border-white border-2"
+              border-black dark:border-white border-2 hover:scale-105"
           >
             Estimar Proyecto
           </button>

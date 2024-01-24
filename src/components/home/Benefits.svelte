@@ -24,7 +24,7 @@
     <div class="w-full flex justify-center content-center">
       <ul class="w-full list-none flex flex-col">
         {#each services as service (service.name)}
-          <li class="border dark:border-white border-black">
+          <li class="border-b dark:border-white border-black">
             <a
               href={service.href}
               class="p-4 font-semibold hover:bg-k-green justify-between flex items-center"

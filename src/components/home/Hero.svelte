@@ -1,4 +1,4 @@
-<div class="w-full h-screen px-6 pt-14 lg:px-8">
+<div class="w-full h-screen px-6 pt-4 lg:px-8">
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
       <div class="w-full flex justify-center content-center mb-4">
         <button
