@@ -9,10 +9,10 @@ export default {
     },
     extend: {
       colors: {
-        'k-purple': '#741AC6',
-        'k-green': '#93D500',
+        'k-purple': 'var(--purple)',
+        'k-green': 'var(--green)',
         'k-gray-dark': '#111111',
-        'k-gray': '#2D2D2D',
+        'k-gray': 'var(--gray)',
         'k-gray-light': '#C9C9C9',
       },
     },

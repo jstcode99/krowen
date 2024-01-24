@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+    --green: #93D500;
+    --purple: #741AC6;
+    --gray: #2D2D2D;
+}
 body {
     @apply bg-gray-200 dark:bg-black text-black dark:text-white text-center;
 }
@@ -8,4 +13,19 @@ body {
     html {
         font-family: "Barlow", system-ui, sans-serif;
     }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--green);
+    border-radius: 5px;
 }

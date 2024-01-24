@@ -33,7 +33,9 @@
     <div class="flex items-center justify-between h-18">
       <div class="flex items-center">
         <div class="flex-shrink-0">
-          <Logo />
+          <a href="/">
+            <Logo />
+          </a>
         </div>
       </div>
       <div class="hidden md:block">
@@ -74,6 +76,19 @@
         </div>
       </div>
       <div class="-mr-2 flex md:hidden">
+        <button
+          id="theme-toggle"
+          type="button"
+          on:click={toggleTheme}
+          class="text-black dark:text-k-green hover:opacity-80
+            focus:outline-none focus:ring-4 rounded-lg text-sm p-2.5"
+        >
+          {#if isDark}
+            <SunIcon />
+          {:else}
+            <MoonIcon />
+          {/if}
+        </button>
         <button
           type="button"
           class="bg-transparent inline-flex items-center
