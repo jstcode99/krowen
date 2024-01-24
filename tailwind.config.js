@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
+  darkMode: 'class',
   theme: {
     fontFamily: {
       'display': ['Barlow'],
@@ -10,9 +11,9 @@ export default {
       colors: {
         'k-purple': '#741AC6',
         'k-green': '#93D500',
-        'k-gray-dark': '#273444',
-        'k-gray': '#C9C9C9',
-        'k-gray-light': '#d3dce6',
+        'k-gray-dark': '#111111',
+        'k-gray': '#2D2D2D',
+        'k-gray-light': '#C9C9C9',
       },
     },
   },

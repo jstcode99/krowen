@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    @apply bg-gray-200 dark:bg-black text-black dark:text-white text-center;
+}
 @layer base {
     html {
         font-family: "Barlow", system-ui, sans-serif;
