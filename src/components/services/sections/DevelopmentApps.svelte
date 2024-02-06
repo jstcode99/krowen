@@ -1,5 +1,5 @@
 <script>
-  import appImage from "$lib/assets/sections/app-for-brand.png";
+  import appImage from "$lib/assets/sections/development-apps/app-for-brand.png";
 </script>
 
 <div class="w-full px-6 lg:px-8">
