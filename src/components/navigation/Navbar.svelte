@@ -1,8 +1,8 @@
 <script lang="ts">
-  import MoonIcon from "./../icons/MoonIcon.svelte";
-  import SunIcon from "../icons/SunIcon.svelte";
-  import { darkTheme } from "../../store/store";
-  import Logo from "../ui/Logo.svelte";
+  import MoonIcon from "@icons/MoonIcon.svelte";
+  import SunIcon from "@icons/SunIcon.svelte";
+  import { darkTheme } from "@store/store";
+  import Logo from "@ui/Logo.svelte";
 
   let isOpen: boolean = false;
   let isDark: boolean = false;
@@ -12,8 +12,6 @@
   const links = [
     { id: 1, name: "Home", href: "/" },
     { id: 3, name: "Services", href: "/services" },
-    { id: 2, name: "About", href: "/about-us" },
-    { id: 4, name: "Contact", href: "/contact" },
   ];
 
   const toggleMenu = (): void => {
