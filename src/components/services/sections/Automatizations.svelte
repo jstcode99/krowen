@@ -1,6 +1,4 @@
 <script>
-  import appAutomatization from "$lib/assets/sections/automatizations/app-automatization.webp";
-  import heroBond from "$lib/assets/sections/automatizations/hero-bond.webp";
   import emblem from "$lib/assets/sections/automatizations/emblem.svg";
 </script>
 
@@ -80,12 +78,12 @@
           style="opacity: 1; transform: none;"
         >
           <picture
-            ><source type="image/webp" srcset={appAutomatization} /><img
+            ><source type="image/webp" srcset={''} /><img
               width="450"
               height="736"
               alt="automated bond portfolio mobile app"
               loading="eager"
-              src={heroBond}
+              src={''}
             />
           </picture>
         </div>
@@ -129,12 +127,12 @@
       <div class="grow relative -mr-24 2xl:mr-0">
         <div class="absolute right-0 top-[30%]">
           <picture
-            ><source type="image/webp" srcset={heroBond} /><img
+            ><source type="image/webp" srcset={''} /><img
               width="475"
               height="327"
               alt="a city landscape"
               loading="eager"
-              src={heroBond}
+              src={''}
             /></picture
           >
         </div>

@@ -1,5 +1,5 @@
 <script>
-  import Input from "../ui/Input.svelte";
+  import Input from "@ui/Input.svelte";
   import VectorGlobo from "@vectors/VectorGlobo.svelte";
 </script>
 

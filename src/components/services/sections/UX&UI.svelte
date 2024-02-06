@@ -1,5 +1,5 @@
 <script>
-  import CloseIcon from "./../icons/CloseIcon.svelte";
+  import CloseIcon from "@icons/CloseIcon.svelte";
   import CheckIcon from "@components/icons/CheckIcon.svelte";
   import badUIUX from "$lib/assets/sections/ui-and-ux/bad ui & ux.png";
   import goodUIUX from "$lib/assets/sections/ui-and-ux/good ui & ux.png";
