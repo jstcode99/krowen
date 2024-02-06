@@ -5,7 +5,7 @@
 
 <div class="w-full px-6 lg:px-8 bg-k-gray-dark">
   <div class="mx-auto max-w-2xl py-32 sm:py-28 lg:py-26 flex flex-col gap-y-5">
-    <div class="animate-pulse flex justify-center content-center bg-pr">
+    <div class="animate-pulse flex justify-center content-center mb-6">
       <VectorGlobo />
     </div>
     <div class="text-left">
@@ -55,7 +55,18 @@
             required
           />
         </div>
-        <div class="flex items-start mb-6"></div>
+        <div class="flex items-start mb-6">
+          <button
+          type="button"
+          class="w-full text-k-gray-light dark:text-white
+              focus:outline-none focus:ring-4 font-medium
+              rounded-lg text-sm px-5 py-2.5 me-2 mb-2
+              border-gray-600 placeholder-gray-400 
+              focus:bg-k-gray focus:bg-k-gray-dark border-2 hover:scale-105"
+        >
+          Estimar Proyecto
+        </button>
+        </div>
       </form>
     </div>
   </div>
