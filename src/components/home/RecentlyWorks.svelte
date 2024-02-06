@@ -1,33 +1,29 @@
 <script>
-  import recentlyChatio from "$lib/assets/sections/recent-works/Chatio.png";
-  import recentlyPartner from "$lib/assets/sections/recent-works/Partner.png";
-  import recentlyPromeParking from "$lib/assets/sections/recent-works/PromeParking.png";
-  import recentlyReferidosCO from "$lib/assets/sections/recent-works/ReferidosCO.png";
 
   const recenltyWorks = [
     {
       title: "Chatio",
       type: "app",
       description: "Aplicación de mensajería instantanea",
-      img: recentlyChatio,
+      img: '',
     },
     {
       title: "Partner",
       type: "app",
       description: "Aplicación de mensajería instantanea",
-      img: recentlyPartner,
+      img: '',
     },
     {
       title: "PromeParking",
       type: "app",
       description: "Aplicación de mensajería instantanea",
-      img: recentlyPromeParking,
+      img: '',
     },
     {
       title: "ReferidosCO",
       type: "app",
       description: "Aplicación de mensajería instantanea",
-      img: recentlyReferidosCO,
+      img: '',
     },
   ];
 </script>
