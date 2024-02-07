@@ -38,7 +38,7 @@
   >
     {#each typeUiAndUX as type (type.title)}
       <div
-        class="p-6 md:p-10 lg:w-1/2 rounded-xl bg-gray-800 transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
+        class="p-6 md:p-10 lg:w-1/2 rounded-xl bg-gradient-to-r from-gray-900 to-black transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
       >
         <div
           class={`mx-auto flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full ${type.color} text-gray-900`}
@@ -69,7 +69,7 @@
 
   <div class="pt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
     <div
-      class="p-6 md:p-10 rounded-xl bg-gray-800 transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
+      class="p-6 md:p-10 rounded-xl bg-gradient-to-r from-gray-900 to-black transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
     >
       <div class="mb-6 flex items-center h-10 text-blue-500">
         <svg
@@ -100,7 +100,7 @@
       </div>
     </div>
     <div
-      class="p-6 md:p-10 rounded-xl bg-gray-800 transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
+      class="p-6 md:p-10 rounded-xl bg-gradient-to-r from-gray-900 to-black transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
     >
       <div class="mb-6 flex items-center h-10 text-pink-500">
         <svg
@@ -131,7 +131,7 @@
       </div>
     </div>
     <div
-      class="p-6 md:p-10 rounded-xl bg-gray-800 transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
+      class="p-6 md:p-10 rounded-xl bg-gradient-to-r from-gray-900 to-black transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
     >
       <div class="mb-6 flex items-center h-10 text-red-500">
         <svg
@@ -181,7 +181,7 @@
       </div>
     </div>
     <div
-      class="p-6 md:p-10 rounded-xl bg-gray-800 transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
+      class="p-6 md:p-10 rounded-xl bg-gradient-to-r from-gray-900 to-black transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
     >
       <div class="mb-6 flex items-center h-10 text-purple-500">
         <svg
@@ -215,7 +215,7 @@
       </div>
     </div>
     <div
-      class="p-6 md:p-10 rounded-xl bg-gray-800 transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
+      class="p-6 md:p-10 rounded-xl bg-gradient-to-r from-gray-900 to-black transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
     >
       <div class="mb-6 flex items-center h-10 text-orange-500">
         <svg
@@ -250,7 +250,7 @@
       </div>
     </div>
     <div
-      class="p-6 md:p-10 rounded-xl bg-gray-800 transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
+      class="p-6 md:p-10 rounded-xl bg-gradient-to-r from-gray-900 to-black transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
     >
       <div class="mb-6 flex items-center h-10 text-pink-500">
         <svg
@@ -281,7 +281,7 @@
       </div>
     </div>
     <div
-      class="p-6 md:p-10 rounded-xl bg-gray-800 transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
+      class="p-6 md:p-10 rounded-xl bg-gradient-to-r from-gray-900 to-black transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
     >
       <div class="mb-6 flex items-center h-10 text-blue-500">
         <svg
@@ -312,7 +312,7 @@
       </div>
     </div>
     <div
-      class="p-6 md:p-10 rounded-xl bg-gray-800 transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
+      class="p-6 md:p-10 rounded-xl bg-gradient-to-r from-gray-900 to-black transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
     >
       <div class="mb-6 flex items-center h-10 text-purple-500">
         <svg
@@ -343,7 +343,7 @@
       </div>
     </div>
     <div
-      class="p-6 md:p-10 rounded-xl bg-gray-800 transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
+      class="p-6 md:p-10 rounded-xl bg-gradient-to-r from-gray-900 to-black transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
     >
       <div class="mb-6 flex items-center h-10 text-yellow-500">
         <svg
