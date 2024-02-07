@@ -4,47 +4,47 @@
   import EqualizablesIcon from "@components/icons/EqualizablesIcon.svelte";
   import GlobeIcon from "@components/icons/GlobeIcon.svelte";
 
-  const webSites = [
+ const webSites = [
     {
       id: 1,
       name: "Basic",
-      summary: "Lorem ipsum dolor sit amet consectetur.",
-      subtext: "Lorem ipsum dolor sit amet consectetur.",
+      summary: "La opción perfecta para aquellos que están dando sus primeros pasos en línea o que necesitan una presencia digital simple pero efectiva.",
+      subtext: "Pequeñas empresas locales, profesionales independientes, artistas emergentes, o proyectos personales que buscan una presencia online económica y funcional.",
       price: 400.0,
       features: [
-        "Basic web features",
-        "Basic web features",
-        "Basic web features",
-        "Basic web features",
-        "Basic web features",
+        "Diseño limpio y minimalista.",
+        "Páginas principales como inicio, sobre nosotros y contacto.",
+        "Integración básica de redes sociales.",
+        "Compatible con dispositivos móviles.",
+        "Hosting y dominio básicos incluidos.",
       ],
     },
     {
       id: 2,
-      name: "Standar",
-      summary: "Lorem ipsum dolor sit amet consectetur.",
-      subtext: "Lorem ipsum dolor sit amet consectetur.",
+      name: "Estandar",
+      summary: "Ideal para empresas que buscan una presencia web más sólida y características adicionales para interactuar con su audiencia.",
+      subtext: "Pequeñas y medianas empresas, startups en crecimiento, agencias locales, o profesionales que desean expandir su presencia en línea y aumentar la interacción con su audiencia.",
       price: 600.0,
       features: [
-        "Basic web features",
-        "Basic web features",
-        "Basic web features",
-        "Basic web features",
-        "Basic web features",
+        "Diseño personalizado y adaptado a la marca.",
+        "Páginas adicionales como servicios, testimonios y blog.",
+        "Formulario de contacto avanzado.",
+        "SEO básico para mejorar la visibilidad en buscadores.",
+        "Integración con herramientas de análisis.",
       ],
     },
     {
       id: 3,
       name: "Pro",
-      summary: "Lorem ipsum dolor sit amet consectetur.",
-      subtext: "Lorem ipsum dolor sit amet consectetur.",
+      summary: "Diseñado para empresas que buscan una presencia web robusta, funcionalidades avanzadas y una experiencia de usuario superior.",
+      subtext: "Empresas establecidas, tiendas en línea, agencias digitales, o negocios que buscan una presencia web de alto nivel para competir en su industria y brindar una experiencia excepcional a sus clientes.",
       price: 900.0,
       features: [
-        "Basic web features",
-        "Basic web features",
-        "Basic web features",
-        "Basic web features",
-        "Basic web features",
+        "Diseño altamente personalizado y centrado en la experiencia del usuario.",
+        "Funcionalidades avanzadas como comercio electrónico, reservas en línea, o membresías.",
+        "Integración con CRM y otras herramientas empresariales.",
+        "Optimización avanzada de SEO y rendimiento.",
+        "Seguridad mejorada con certificados SSL y copias de seguridad automáticas.",
       ],
     },
   ];
@@ -78,10 +78,7 @@
         <span class="text-k-green">Web Site</span> para empresas
       </h2>
       <p class="mt-6 text-lg leading-8 dark:text-gray-400">
-        Lorem ipsum dolor sit amet consectetur. Scelerisque convallis vel
-        venenatis euismod. Tristique proin turpis pharetra quam pretium bibendum
-        molestie quis. Odio lacus interdum odio sem sed. Sed libero id pretium
-        dui non in ornare quam ut.
+        En el competitivo mundo digital actual, es crucial contar con una página web que no solo sea visualmente atractiva, sino también altamente funcional y optimizada para los motores de búsqueda. En [Nombre de la Empresa], ofrecemos servicios de desarrollo de páginas web de tres niveles diferentes para adaptarnos a las necesidades y objetivos de tu empresa: Básica, Estándar y Profesional.
       </p>
     </div>
     <div class="w-full flex flex-wrap justify-center gap-6">
