@@ -1,5 +1,8 @@
 <script>
   import emblem from "$lib/assets/sections/automatizations/emblem.svg";
+  import hero from "$lib/assets/sections/automatizations/hero-back.png";
+  import app from "$lib/assets/sections/automatizations/app.png";
+
 </script>
 
 <section>
@@ -7,23 +10,20 @@
     <section class="flex justify-between max-w-[1400px] mx-auto">
       <div class="max-w-3xl relative">
         <h1 class="text-left text-6xl mb-10 mt-12 font-bold">
-          Alcanza las metas <span class="block xl:inline text-k-green"
-            >automatizando,</span
-          >
-          y <span class="block xl:inline text-k-green">tecnificando</span> procesos.
+          Desarrollamos Aplicaciones Empresariales: <span class="block xl:inline text-k-green"
+            >Potencia tu Negocio</span> en el
+          <span class="block xl:inline text-k-green"> Mundo Digital!</span>
         </h1>
         <div class="max-w-[370px] xl:max-w-[428px] mb-8">
           <p class="text-left font-bold mb-4">
-            reduce costos en implementacion y<span class="block sm:inline"
-              >desarrollo de procesos corporativoss.</span
+            Reduce costos en implementacion y <span class="block sm:inline"
+              > corporativos.</span
             >
           </p>
           <p class="text-left mb-4">
-            Whether you’re planning to retire soon, or you’re looking for lower
-            risk than equities, bonds can be a great way to invest for the next
-            few years. Our Automated Bond Portfolio is optimized to your tax
-            situation with the added benefit of monthly dividends. Best of all,
-            your account stays liquid for more flexibility.
+            En el panorama empresarial actual, tener una presencia móvil sólida es crucial para alcanzar el éxito. En 
+            <span class="block xl:inline text-k-green"
+            >krowen</span> , ofrecemos servicios de desarrollo de aplicaciones personalizadas para empresas, diseñadas para impulsar tu crecimiento y eficiencia. Desde startups emergentes hasta corporaciones establecidas, nuestro equipo de expertos en desarrollo de aplicaciones está aquí para convertir tus ideas en realidad.
           </p>
         </div>
         <div class="w-full flex justify-start">
@@ -43,34 +43,34 @@
             700K+
           </div>
           <span data-testid="accolades-subtitle" class="self-start"
-            >Trusted clients</span
+            >lineas de codigo</span
           >
           <div
             data-testid="accolades-aum-in-billions"
             class="text-3xl font-semibold"
           >
-            $50B+
+            3
           </div>
           <span data-testid="accolades-subtitle" class="self-start"
-            >In assets managed</span
+            >Productos & Servicios</span
           >
           <div class="text-3xl font-semibold">
             <div class="inline-flex items-baseline space-x-2">
-              <span>4.8</span>
+              <span>5.8</span>
             </div>
           </div>
           <span data-testid="accolades-subtitle" class="self-start"
-            >Apple App
-            <span class="md:whitespace-nowrap">Store <sup>1</sup></span></span
+            >Anos de
+            <span class="md:whitespace-nowrap">Experiencia</span></span
           >
           <div class="text-3xl font-semibold">
             <div class="inline-flex items-baseline space-x-2">
-              <span>4.9</span>
+              <span>4</span>
             </div>
           </div>
           <span data-testid="accolades-subtitle" class="self-start"
-            >Google Play
-            <span class="md:whitespace-nowrap">Store <sup>1</sup></span></span
+            >Proyectos
+            <span class="md:whitespace-nowrap">desplegados</span></span
           >
         </div>
         <div
@@ -78,12 +78,12 @@
           style="opacity: 1; transform: none;"
         >
           <picture
-            ><source type="image/webp" srcset={''} /><img
+            ><source type="image/webp" srcset={app} /><img
               width="450"
               height="736"
               alt="automated bond portfolio mobile app"
               loading="eager"
-              src={''}
+              src={app}
             />
           </picture>
         </div>
@@ -96,11 +96,11 @@
               class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
               data-testid="hero-star-content"
             >
-              <p class="text-4xl sm:text-6xl text-white">15.51%</p>
+              <p class="text-4xl sm:text-6xl text-white">15%</p>
               <p
                 class="text-sm sm:text-sm lg:text-sm leading-3 text-white font-bold mb-2"
               >
-                De reducion de tiempos en procesos
+                De reducion de costo que otras empresas
               </p>
             </div>
             <div class="sm:hidden">
@@ -127,12 +127,12 @@
       <div class="grow relative -mr-24 2xl:mr-0">
         <div class="absolute right-0 top-[30%]">
           <picture
-            ><source type="image/webp" srcset={''} /><img
+            ><source type="image/webp" srcset={hero} /><img
               width="475"
               height="327"
               alt="a city landscape"
               loading="eager"
-              src={''}
+              src={hero}
             /></picture
           >
         </div>
