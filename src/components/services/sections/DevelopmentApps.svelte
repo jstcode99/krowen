@@ -12,10 +12,7 @@
         Desarrollo de <span class="text-k-green">Apps</span> para empresas
       </h2>
       <p class="mt-6 text-lg leading-8 dark:text-gray-400">
-        Lorem ipsum dolor sit amet consectetur. Scelerisque convallis vel
-        venenatis euismod. Tristique proin turpis pharetra quam pretium bibendum
-        molestie quis. Odio lacus interdum odio sem sed. Sed libero id pretium
-        dui non in ornare quam ut.
+        Integramos funcionalidades avanzadas como GPS, pagos en línea, notificaciones push y más, para ofrecer una experiencia de usuario superior. Nuestras aplicaciones están diseñadas para ser intuitivas, seguras y altamente funcionales, garantizando la satisfacción del usuario y la fidelidad a tu marca.
       </p>
     </div>
     <div class="flex justify-center">
