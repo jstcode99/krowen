@@ -4,6 +4,10 @@
   import Navbar from "../components/navigation/Navbar.svelte";
 </script>
 
+<div
+  class="dark:[background:radial-gradient(125%_125%_at_40%_20%,#000_40%,#63e_100%)]"
+>
 <Navbar />
-  <slot />
+<slot />
 <Footer />
+</div>
