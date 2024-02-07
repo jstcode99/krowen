@@ -1,28 +1,66 @@
 <script>
+	import OpenAIIcon from '@components/icons/OpenAIIcon.svelte';
+	import WhatsappIcon from '@components/icons/WhatsappIcon.svelte';
+	import NequiIcon from '@components/icons/NequiIcon.svelte';
+	import InstagramIcon from '@components/icons/InstagramIcon.svelte';
+	import FacebookIcon from '@components/icons/FacebookIcon .svelte';
+	import GoogleIcon from '@components/icons/GoogleIcon.svelte';
   import AppleIcon from "@components/icons/AppleIcon.svelte";
   import SendToBackIcon from "@components/icons/SendToBackIcon.svelte";
   import CheckUserIcon from "@components/icons/CheckUserIcon.svelte";
+  import PaypalIcon from '@components/icons/PaypalIcon.svelte';
+
+  import landing1 from "$lib/assets/sections/hero/landing-1.png";
+  import landing2 from "$lib/assets/sections/hero/landing-2.png";
+  import landing3 from "$lib/assets/sections/hero/landing-3.png";
   const integrations = [
     {
-      id: 1,
-      src: "/images/integrations/react.svg",
-      alt: "React",
+      icon: GoogleIcon,
+      name: "Google",
+    },
+    {
+      icon: FacebookIcon,
+      name: "Facebook",
+    },
+    {
+      icon: InstagramIcon,
+      name: "Instagram",
+    },
+    {
+      icon: PaypalIcon,
+      name: "Paypal",
+    },
+    {
+      icon: NequiIcon,
+      name: "Nequi",
+    },
+    {
+      icon: "",
+      name: "CRM",
+    },
+    {
+      icon: WhatsappIcon,
+      name: "WhatsApp",
+    },
+    {
+      icon: OpenAIIcon,
+      name: "Open AI",
     },
   ];
   const heros = [
     {
       id: 1,
-      src: "",
+      src: landing1,
       alt: "Hero 1",
     },
     {
       id: 2,
-      src: "",
+      src:landing2,
       alt: "Hero 2",
     },
     {
       id: 3,
-      src: "",
+      src: landing3,
       alt: "Hero 3",
     },
   ];
@@ -65,10 +103,11 @@
       >
         Desarrollamos proctos con diferentes integraciones
       </p>
-      <div class="flex flex-wrap gap-6 mt-4">
-        {#each integrations as integration (integration.id)}
+      <div class="flex flex-wrap justify-center gap-6 mt-4">
+        {#each integrations as integration (integration)}
           <div class="flex items-center text-sm font-medium">
-            <span class="ml-2.5">{integration.alt}</span>
+            <svelte:component this={integration.icon} size={35} />
+            <span class="ml-2.5">{integration.name}</span>
           </div>
         {/each}
       </div>
@@ -89,9 +128,11 @@
       </div>
     </div>
     <div class="relative z-10 hidden lg:block">
-      <div class="mt-6 flex">
+      <div class="mt-6 flex gap-2">
         {#each heros as hero (hero.id)}
-          <div class="relative flex-shrink-0 p-4">
+          <div class="relative flex-shrink-0 p-4
+          inline-flex h-full animate-background-shine cursor-pointer items-center rounded justify-center border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] 
+          bg-[length:250%_100%] p-2 text-xs font-medium text-gray-300">
             <div
               class="relative z-10 overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5"
             >
