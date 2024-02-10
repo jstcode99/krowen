@@ -14,68 +14,68 @@
         animation={"slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
       >
         <h2 class="text-5xl font-bold tracking-tight text-white sm:text-6xl">
-          Get In Touch
+          Contactanos ahora!
         </h2>
-        <p class="mt-6 text-lg leading-8 text-white">
-          Company IT is an agency company that provides professional IT services
-          for entrepreneurs and companies around the world.
-        </p>
       </Saos>
+      <p class="mt-6 text-lg leading-8 text-white">
+        Envianos un mensaje y nos pondremos en contacto contigo lo antes 
+        posible.
+      </p>
     </div>
     <div class="w-full flex justify-center content-center">
       <form class="w-full flex flex-col">
         <Saos
-          animation={"slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
-        >
-          <div class="mb-6">
-            <Input
-              value={""}
-              type="text"
-              name="email"
-              placeholder="your-email@email.com"
-              required
-            />
-          </div>
-          <div class="mb-6">
-            <Input
-              value={""}
-              type="text"
-              name="name"
-              placeholder="Name"
-              required
-            />
-          </div>
-          <div class="mb-6">
-            <Input
-              value={""}
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              required
-            />
-          </div>
-          <div class="mb-6">
-            <Input
-              value={""}
-              type="textarea"
-              name="message"
-              placeholder="Message"
-              required
-            />
-          </div>
-          <div class="flex items-start mb-6">
-            <button
-              type="button"
-              class="w-full text-k-gray-light dark:text-white
+        animation={"slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
+      >
+        <div class="mb-6">
+          <Input
+            value={""}
+            type="text"
+            name="email"
+            placeholder="your-email@email.com"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <Input
+            value={""}
+            type="text"
+            name="nombre"
+            placeholder="nombre"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <Input
+            value={""}
+            type="text"
+            name="asunto"
+            placeholder="Asunto"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <Input
+            value={""}
+            type="textarea"
+            name="mensaje"
+            placeholder="mensaje"
+            required
+          />
+        </div>
+        <div class="flex items-start mb-6">
+          <button
+            type="button"
+            class="w-full text-k-gray-light dark:text-white
               focus:outline-none focus:ring-4 font-medium
               rounded-lg text-sm px-5 py-2.5 me-2 mb-2
               border-gray-600 placeholder-gray-400
               focus:bg-k-gray focus:bg-k-gray-dark border-2 hover:scale-105"
-            >
-              Enviar mensaje
-            </button>
-          </div>
-        </Saos>
+          >
+            Enviar mensaje
+          </button>
+        </div>
+      </Saos>
       </form>
     </div>
   </div>

@@ -11,7 +11,8 @@
 
   const links = [
     { id: 1, name: "Home", href: "/" },
-    { id: 3, name: "Services", href: "/services" },
+    { id: 2, name: "Servicios", href: "/servicios" },
+    { id: 3, name: "Contacto", href: "/contacto" },
   ];
 
   const toggleMenu = (): void => {
@@ -69,7 +70,7 @@
                 rounded-lg text-sm px-5 py-2.5 me-2 mb-2
               border-black dark:border-white border-2 hover:scale-105"
           >
-            Estimar Proyecto
+            Agenda tu asesoria
           </button>
         </div>
       </div>

@@ -4,9 +4,8 @@
 
     const links = [
         { id: 1, name: 'Home', href: '/' },
-        { id: 2, name: 'About', href: '/about' },
-        { id: 3, name: 'Services', href: '/service' },
-        { id: 4, name: 'Contact', href: '/contact' },
+        { id: 2, name: 'Servicios', href: '/servicios' },
+        { id: 3, name: 'Contacto', href: '/contacto' },
     ];
 </script>
 <footer class="w-full mx-auto bg-gray-200 shadow dark:bg-black">
