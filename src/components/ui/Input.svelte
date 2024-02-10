@@ -18,7 +18,7 @@
     name={name}
     id={name}
     class="text-sm rounded-lg 
-        w-full p-2 bg-k-gray
+        w-full p-4 bg-k-gray
         border-gray-600 placeholder-gray-400 text-white 
         focus:bg-k-gray focus:bg-k-gray-dark"
     {placeholder}
@@ -30,7 +30,7 @@
     name={name}
     id={name}
     class="text-sm rounded-lg 
-        w-full p-2 bg-k-gray
+        w-full p-4 bg-k-gray
         border-gray-600 placeholder-gray-400 text-white 
         focus:bg-k-gray focus:bg-k-gray-dark"
     {placeholder}

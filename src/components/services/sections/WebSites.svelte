@@ -72,7 +72,7 @@
 </script>
 
 <div class="w-full px-6 lg:px-8">
-  <div class="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56 flex flex-col gap-y-10">
+  <div class="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56 flex flex-col gap-y-10">
     <div class="text-left">
       <h2 class="text-3xl font-bold tracking-tight dark:text-white sm:text-6xl">
         <span class="text-k-green">Web Site</span> para empresas

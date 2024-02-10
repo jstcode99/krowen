@@ -1,4 +1,5 @@
 <script>
+	import CRMIcon from './../../icons/CRMIcon.svelte';
 	import OpenAIIcon from '@components/icons/OpenAIIcon.svelte';
 	import WhatsappIcon from '@components/icons/WhatsappIcon.svelte';
 	import NequiIcon from '@components/icons/NequiIcon.svelte';
@@ -35,7 +36,7 @@
       name: "Nequi",
     },
     {
-      icon: "",
+      icon: CRMIcon,
       name: "CRM",
     },
     {
@@ -91,9 +92,9 @@
 </script>
 
 <div class="h-auto overflow-hidden pt-12 md:pt-[5.75rem]">
-  <div class="mx-auto max-w-container px-4 pt-4 sm:px-6 lg:flex lg:px-8">
+  <div class="mx-auto max-w-container flex flex-wrap justify-center px-4 sm:px-6 lg:flex lg:px-8">
     <div
-      class="relative z-20 mx-auto max-w-[40rem] pb-16 pt-16 lg:mx-0 lg:w-[40rem] lg:max-w-none lg:flex-none lg:pb-24 lg:pr-4 lg:pt-20"
+      class="relative z-20 mx-auto max-w-[40rem] pb-16 pt-8 lg:mx-0 lg:w-[40rem] lg:max-w-none lg:flex-none lg:pb-24 lg:pr-4 lg:pt-18"
     >
       <h1 class="text-base font-semibold leading-7 text-k-green">
         Aplicacions, Web sites, E-commerce, SEO, Marketing Digital
@@ -103,11 +104,14 @@
       >
         Desarrollamos proctos con diferentes integraciones
       </p>
-      <div class="flex flex-wrap justify-center gap-6 mt-4">
+      <div class="flex flex-wrap justify-center gap-2 mt-4">
         {#each integrations as integration (integration)}
-          <div class="flex items-center text-sm font-medium">
+          <div class="flex items-center text-sm font-medium cursor-pointer border border-gray-400 rounded-lg
+          hover:scale-105 duration-300 hover:shadow-sm transform-gpu">
+          <div class="mx-2 my-2">
             <svelte:component this={integration.icon} size={35} />
-            <span class="ml-2.5">{integration.name}</span>
+          </div>
+            <span class="me-2">{integration.name}</span>
           </div>
         {/each}
       </div>
@@ -127,12 +131,13 @@
         >
       </div>
     </div>
-    <div class="relative z-10 hidden lg:block">
-      <div class="mt-6 flex gap-2">
+    <div class="hidden mt-8 lg:block">
+      <div class="mt-12 flex gap-2">
         {#each heros as hero (hero.id)}
           <div class="relative flex-shrink-0 p-4
-          inline-flex h-full animate-background-shine cursor-pointer items-center rounded justify-center border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] 
-          bg-[length:250%_100%] p-2 text-xs font-medium text-gray-300">
+          inline-flex h-full animate-background-shine cursor-pointer items-center 
+          rounded justify-center border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] 
+          bg-[length:250%_100%] text-xs font-medium text-gray-300">
             <div
               class="relative z-10 overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5"
             >
@@ -144,7 +149,7 @@
     </div>
   </div>
   <div class="relative z-20 sm:z-auto">
-    <div class="mx-auto max-w-container px-4 pb-16 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-container px-4 pb-16 sm:px-6 lg:px-4">
       <div
         class="relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3"
       >
