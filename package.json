@@ -22,5 +22,8 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "saos": "^1.3.1"
+  }
 }
