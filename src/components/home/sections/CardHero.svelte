@@ -11,14 +11,14 @@
             <h6
               class="text-md text-center font-semibold tracking-tight"
             >
-              Love our Our Tool?
+              Amas nuestras herramientas?
             </h6>
           </a>
         <a href="/">
           <h5
             class="text-2xl text-center font-semibold tracking-tight"
           >
-            Fell Free to Contact us every Days the year
+            Sientete libre de llamarnos o escribirnos a cualquier dia del año.
           </h5>
         </a>
 
