@@ -64,7 +64,7 @@
               border-gray-600 placeholder-gray-400 
               focus:bg-k-gray focus:bg-k-gray-dark border-2 hover:scale-105"
         >
-          Estimar Proyecto
+          Enviar mensaje
         </button>
         </div>
       </form>
