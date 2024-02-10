@@ -60,20 +60,20 @@
     {
       id: 1,
       icon: AdaptativeIcon,
-      title: "Adaptative",
-      tags: ["Responsive", "Adaptative", "Adaptative2"],
+      title: "Adaptativo",
+      tags: ["Marca", "Coherente", "Simple", "Efectivo"],
     },
     {
       id: 2,
       icon: EqualizablesIcon,
-      title: "Equalizables",
-      tags: ["Responsive", "Adaptative", "Adaptative2"],
+      title: "Personalizable",
+      tags: ["Flexible", "Interactivo", "Atractivo"],
     },
     {
       id: 3,
       icon: GlobeIcon,
-      title: "Globe",
-      tags: ["Responsive", "Adaptative", "Adaptative2"],
+      title: "Escalable",
+      tags: ["Economico", "De micro a macro", "Protiempo"],
     },
   ];
 </script>
@@ -124,7 +124,7 @@
     <h2
       class="pt-14 font-bold text-xl text-center text-white sm:pt-20 sm:text-md lg:text-left lg:text-xl 2xl:text-6xl"
     >
-      Buscar algo como esto ?
+      Buscas algo como esto ?
       <span
         class="text-md sm:text-md font-light lg:text-sm 2xl:text-6xl text-white"
         >Conoce nuestros propuestas.</span
