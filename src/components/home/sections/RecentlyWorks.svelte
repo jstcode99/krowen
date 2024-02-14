@@ -1,6 +1,9 @@
 <script>
   import referidos from "$lib/assets/sections/recent-works/referidos.png";
   import partner from "$lib/assets/sections/recent-works/partner.png";
+
+  import referidosWebp from "$lib/assets/sections/recent-works/referidos.webp";
+  import partnerWebp from "$lib/assets/sections/recent-works/partner.webp";
   import Saos from "saos";
 
   const recenltyWorks = [
@@ -9,12 +12,14 @@
       type: "App",
       description: "Aplicación de mensajería instantanea",
       img: partner,
+      webp: referidosWebp
     },
     {
       title: "ReferidosCO",
       type: "App",
       description: "Aplicación de mensajería instantanea",
       img: referidos,
+      webp: partnerWebp
     },
   ];
 </script>
@@ -91,11 +96,14 @@
           <p class="px-4 text-sm leading-6 sm:px-0 md:hidden">
             {recenltyWork.description}
           </p>
-          <img
-            src={recenltyWork.img}
-            alt={recenltyWork.title}
-            class="mt-10 aspect-[1216/640] sm:rounded-3xl md:mt-0"
-          />
+          <picture>
+            <source srcset={recenltyWork.webp} type="image/webp" />
+            <img
+              src={recenltyWork.img}
+              alt={recenltyWork.title}
+              class="mt-10 aspect-[1216/640] sm:rounded-3xl md:mt-0"
+            />
+          </picture>
         </div>
       {/each}
     </div>

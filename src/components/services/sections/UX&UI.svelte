@@ -3,7 +3,8 @@
   import CheckIcon from "@components/icons/CheckIcon.svelte";
   import badUIUX from "$lib/assets/sections/ui-and-ux/bad ui & ux.png";
   import goodUIUX from "$lib/assets/sections/ui-and-ux/good ui & ux.png";
-
+  import badUIUXWebp from "$lib/assets/sections/ui-and-ux/bad ui & ux.webp";
+  import goodUIUXWebp from "$lib/assets/sections/ui-and-ux/good ui & ux.webp";
 
   const typeUiAndUX = [
     {
@@ -12,7 +13,8 @@
         "El concepto de la interfaz es confuso y no permite al usuario interactuar de manera eficiente",
       color: "bg-red-500",
       icon: CheckIcon,
-      image: badUIUX,
+      src: badUIUX,
+      webp: badUIUXWebp,
     },
     {
       title: "Buena UI & UX",
@@ -20,7 +22,8 @@
         "El concepto de la interfaz es claro y permite al usuario interactuar de manera eficiente",
       color: "bg-yellow-300",
       icon: CloseIcon,
-      image: goodUIUX,
+      src: badUIUX,
+      webp: goodUIUXWebp,
     },
   ];
 
@@ -72,7 +75,11 @@
 
         <div class="flex justify-center">
           <div class="pt-12 max-w-lg min-h-lg">
-            <img src={type.image} alt={type.title} />
+            <picture>
+              <source srcset={type.webp} type="image/webp" />
+              <img src={type.src} alt={type.title} />
+
+            </picture>
           </div>
         </div>
       </div>
@@ -84,9 +91,6 @@
     <div
       class="p-6 md:p-10 rounded-xl bg-gradient-to-r from-gray-900 to-black transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
     >
-      <!-- <div class={`mb-6 flex items-center h-10 ${attribute.color}`}>
-        <svelte:component this={attribute.icon} />
-      </div> -->
       <div>
         <h3
           class="pb-1 md:pb-2 text-gray-100 font-semibold text-lg md:text-2xl leading-6"

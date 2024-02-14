@@ -1,7 +1,9 @@
 <script>
   import Emblem from "@components/icons/Emblem.svelte";
   import heroBack from "$lib/assets/sections/automatizations/hero-back.png";
+  import heroBackWebp from "$lib/assets/sections/automatizations/hero-back.webp";
   import app from "$lib/assets/sections/automatizations/app.png";
+  import appWebp from "$lib/assets/sections/automatizations/app.webp";
   import Saos from "saos";
 </script>
 
@@ -63,11 +65,14 @@
         <Saos
           animation={"slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
         >
-          <img
-            src={app}
-            class="object-fill h-full w-[1400px] md:w-full"
-            alt="potencia tu negocio"
-          />
+          <picture>
+            <source srcset={appWebp} type="image/webp" />
+            <img
+              src={app}
+              class="object-fill h-full w-[1400px] md:w-full"
+              alt="potencia tu negocio"
+            />
+          </picture>
         </Saos>
       </div>
       <div class="relative top-[65%] xl:top-[60%] z-20">
@@ -93,6 +98,10 @@
 
     <div class="absolute -mr-24 2xl:mr-0 xl:right-[10%] md:left-[50%]">
       <img src={heroBack} class="object-fill h-full w-[500px]" alt="hero" />
+      <picture>
+        <source srcset={heroBackWebp} type="image/webp" />
+        <img src={heroBack} class="object-fill h-full w-[500px]" alt="hero" />
+      </picture>
     </div>
   </div>
 </div>

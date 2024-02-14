@@ -1,5 +1,7 @@
 <script>
   import appImage from "$lib/assets/sections/development-apps/app-for-brand.png";
+  import appImageWebp from "$lib/assets/sections/development-apps/app-for-brand.webp";
+
   import Saos from "saos";
 </script>
 
@@ -26,7 +28,10 @@
     <Saos
       animation={"slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
     >
-      <img src={appImage} alt="Desarrollo de apps a la medida" />
+      <picture>
+        <source srcset={appImageWebp} type="image/webp" />
+        <img src={appImage} alt="Desarrollo de apps a la medida"  />
+      </picture>
     </Saos>
   </div>
 </div>

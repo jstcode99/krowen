@@ -1,5 +1,7 @@
 <script>
   import hero from "$lib/assets/sections/hero/hero-home.png";
+  import heroWebp from "$lib/assets/sections/hero/hero-home.webp";
+
   import Saos from "saos";
 </script>
 
@@ -58,15 +60,18 @@
     <div
       class="hidden absolute lg:block xl:block right-[10%] md:right-[-0%] xl:top-0 md:top-[20%] opacity-90"
     >
-    <Saos
-    animation={"slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
-  >
-  <img
-    class="object-cover h-full xl:w-[1100px] lg:w-[600px]"
-    src={hero}
-    alt="Desarrollo tus ideas con nosotros"
-  />
-</Saos>
+      <Saos
+        animation={"slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
+      >
+        <picture>
+          <source srcset={heroWebp} type="image/webp" />
+          <img
+            class="object-cover h-full xl:w-[1100px] lg:w-[600px]"
+            src={hero}
+            alt="Desarrollo tus ideas con nosotros"
+          />
+        </picture>
+      </Saos>
     </div>
   </div>
 </section>
