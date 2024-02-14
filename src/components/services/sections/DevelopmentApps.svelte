@@ -30,7 +30,7 @@
     >
       <picture>
         <source srcset={appImageWebp} type="image/webp" />
-        <img src={appImage} alt="Desarrollo de apps a la medida"  />
+        <img src={appImage} class="max-w-72 object-cover h-full sm:w-72 lg:h-full md:w-72  w-96" alt="Desarrollo de apps a la medida"  />
       </picture>
     </Saos>
   </div>

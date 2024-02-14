@@ -1,7 +1,4 @@
 <script>
-  import Emblem from "@components/icons/Emblem.svelte";
-  import heroBack from "$lib/assets/sections/automatizations/hero-back.png";
-  import heroBackWebp from "$lib/assets/sections/automatizations/hero-back.webp";
   import app from "$lib/assets/sections/automatizations/app.png";
   import appWebp from "$lib/assets/sections/automatizations/app.webp";
   import Saos from "saos";
@@ -58,13 +55,15 @@
     </Saos>
   </div>
   <div
-    class="lg:w-4/12 md:w-full md:hidden lg:flex justify-center mt-10 md:mb-26"
+    class="lg:w-4/12 md:w-full lg:flex justify-center items-start mt-10 md:mb-26"
   >
     <div class="w-full md:ml-3">
-      <div class="absolute z-10">
+      <div class="block xl:absolute z-10">
         <Saos
           animation={"slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
         >
+          <!-- Automatizations img -->
+
           <picture>
             <source srcset={appWebp} type="image/webp" />
             <img
@@ -75,33 +74,6 @@
           </picture>
         </Saos>
       </div>
-      <div class="relative top-[65%] xl:top-[60%] z-20">
-        <div class="relative">
-          <div
-            class="absolute top-16 left-14 text-center"
-            data-testid="hero-star-content"
-          >
-            <p class="text-4xl sm:text-6xl text-white">15%</p>
-            <p
-              class="text-sm sm:text-sm lg:text-sm leading-3 text-white font-bold mb-2"
-            >
-              De reducion de costo <br />
-              que otras empresas
-            </p>
-          </div>
-          <div class="block text-k-purple">
-            <Emblem />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="absolute -mr-24 2xl:mr-0 xl:right-[10%] md:left-[50%]">
-      <img src={heroBack} class="object-fill h-full w-[500px]" alt="hero" />
-      <picture>
-        <source srcset={heroBackWebp} type="image/webp" />
-        <img src={heroBack} class="object-fill h-full w-[500px]" alt="hero" />
-      </picture>
     </div>
   </div>
 </div>
