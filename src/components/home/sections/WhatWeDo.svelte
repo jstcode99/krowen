@@ -21,7 +21,7 @@
     <Saos
       animation={"slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
     >
-      <article class="md:w-3/4 md:pr-24 pb-8">
+      <article class="md:w-3/4 pb-8">
         <div class="flex justify-center animate-pulse">
           <VectorWhat />
         </div>

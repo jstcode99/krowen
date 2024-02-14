@@ -26,17 +26,6 @@
       webp: goodUIUXWebp,
     },
   ];
-
-  const attributes = [
-    { img: "", title: "E"},
-    { img: "", title: "L"},
-    { img: "", title: "E"},
-    { img: "", title: "G"},
-    { img: "", title: "A"},
-    { img: "", title: "N"},
-    { img: "", title: "T"},
-    { img: "", title: "E"},
-  ]
 </script>
 
 <div class="mx-auto max-w-screen-xl px-6 md:px-10 py-16 md:py-24">
@@ -83,22 +72,6 @@
           </div>
         </div>
       </div>
-    {/each}
-  </div>
-
-  <div class="pt-6 flex flex-wrap justify-center gap-x-1">
-    {#each attributes as attribute (attribute)}
-    <div
-      class="p-6 md:p-10 rounded-xl bg-gradient-to-r from-gray-900 to-black transform origin-center hover:scale-105 hover:bg-gray-700 transition duration-150 ease-in-out"
-    >
-      <div>
-        <h3
-          class="pb-1 md:pb-2 text-gray-100 font-semibold text-lg md:text-2xl leading-6"
-        >
-        {attribute.title}
-        </h3>
-      </div>
-    </div>
     {/each}
   </div>
 </div>
