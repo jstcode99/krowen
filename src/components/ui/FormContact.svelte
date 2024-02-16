@@ -12,19 +12,19 @@
         value={""}
         type="text"
         name="email"
-        placeholder="your-email@email.com"
+        placeholder="tu-email@email.com"
         required
       />
     </div>
     <div class="mb-6">
-      <Input value={""} type="text" name="name" placeholder="Name" required />
+      <Input value={""} type="text" name="name" placeholder="Nombre" required />
     </div>
     <div class="mb-6">
       <Input
         value={""}
         type="text"
         name="subject"
-        placeholder="Subject"
+        placeholder="Asunto"
         required
       />
     </div>
@@ -33,7 +33,7 @@
         value={""}
         type="textarea"
         name="message"
-        placeholder="Message"
+        placeholder="Mensaje"
         required
       />
     </div>
