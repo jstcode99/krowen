@@ -8,6 +8,7 @@
     subtext: string;
     price: number;
     features: string[];
+    link: string;
   }
   let webSite: IWebSite | null = null;
   let rotatation = 0;
@@ -37,15 +38,16 @@
       >${webSite?.price}</span
     >
     <div class="w-full flex justify-center items-center">
-      <button
-        type="button"
+      <a
+      target="_blank"
+        href={webSite?.link}
         class="text-white dark:text-white
             focus:outline-none focus:ring-4 font-medium
             rounded-lg text-sm px-6 py-2 mt-2 mb-2
           border-white border-2 hover:scale-105"
       >
         Comprar ahora!
-      </button>
+    </a>
     </div>
     <h3 class="text-white text-sm font-semibold">Hechas para</h3>
     <p class="text-left text-gray-400 text-xs font-normal">

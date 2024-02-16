@@ -21,6 +21,7 @@
         "Compatible con dispositivos móviles.",
         "Hosting y dominio básicos incluidos.",
       ],
+      link: `https://api.whatsapp.com/send?phone=573168314191&text=Hola%2C%20estoy%20interesado%20%F0%9F%A4%94%2C%20en%20el%20servicio%20de%20Web%20site%20*Basic*%20con%20ustedes`
     },
     {
       id: 2,
@@ -37,6 +38,7 @@
         "SEO básico para mejorar la visibilidad en buscadores.",
         "Integración con herramientas de análisis.",
       ],
+      link: `https://api.whatsapp.com/send?phone=573168314191&text=Hola%2C%20estoy%20interesado%20%F0%9F%A4%94%2C%20en%20el%20servicio%20de%20Web%20site%20*Estandar*%20con%20ustedes`
     },
     {
       id: 3,
@@ -53,6 +55,7 @@
         "Optimización avanzada de SEO y rendimiento.",
         "Seguridad mejorada con certificados SSL y copias de seguridad automáticas.",
       ],
+      link: `https://api.whatsapp.com/send?phone=573168314191&text=Hola%2C%20estoy%20interesado%20%F0%9F%A4%94%2C%20en%20el%20servicio%20de%20Web%20site%20*Pro*%20con%20ustedes`
     },
   ];
 
@@ -93,8 +96,7 @@
       <p class="mt-6 text-lg leading-8 dark:text-gray-400">
         En el competitivo mundo digital actual, es crucial contar con una página
         web que no solo sea visualmente atractiva, sino también altamente
-        funcional y optimizada para los motores de búsqueda. En [Nombre de la
-        Empresa], ofrecemos servicios de desarrollo de páginas web de tres
+        funcional y optimizada para los motores de búsqueda. En <span class="text-k-green">krowen</span>, ofrecemos servicios de desarrollo de páginas web de tres
         niveles diferentes para adaptarnos a las necesidades y objetivos de tu
         empresa: Básica, Estándar y Profesional.
       </p>

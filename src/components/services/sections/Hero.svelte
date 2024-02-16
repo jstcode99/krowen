@@ -141,7 +141,7 @@
       </p>
       <div class="mt-8 flex justify-center gap-4">
         <a
-          href="#browse"
+          href="/contacto"
           class="inline-flex justify-center items-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700"
           ><span
             >Contactar <span class="hidden sm:inline">ahora</span>

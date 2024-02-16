@@ -33,8 +33,9 @@
         </p>
       </div>
       <a
+      target="_blank"
         class="w-ful justify-center items-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700"
-        href="/#contact">Iniciar ahora!</a
+        href="https://api.whatsapp.com/send?phone=573168314191&text=Hola%2C%20estoy%20interesado%20%F0%9F%A4%94%2C%20el%20servicio%20de%20*Automatizacion*%20con%20ustedes">Iniciar ahora!</a
       >
 
       <div
