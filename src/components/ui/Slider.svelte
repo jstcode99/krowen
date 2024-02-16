@@ -57,7 +57,7 @@
   </div>
 </Saos>
 <article
-  class="w-[100vw] h-screen relative"
+  class="w-full h-screen relative"
 >
   {#each slides as slide, index (index)}
     {#if currentSlide === index}
@@ -75,7 +75,7 @@
             alt={slide.title}
             class:opacity-100={index === currentSlide}
             class:opacity-30={index !== currentSlide}
-            class="mt-10 sm:rounded-3xl md:mt-0 transform duration-300 ease-in-out"
+            class="object-fill w-full mt-10 sm:rounded-3xl md:mt-0 transform duration-300 ease-in-out"
           />
         </picture>
       </div>
