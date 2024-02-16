@@ -47,7 +47,7 @@
         <div
           class={`mx-auto flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full ${type.color} text-gray-900`}
         >
-          <CheckIcon />
+          <svelte:component this={type.icon} size={35} />
         </div>
         <div class="flex justify-center">
           <div
