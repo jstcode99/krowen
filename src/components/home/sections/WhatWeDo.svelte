@@ -1,4 +1,5 @@
 <script>
+  import CheckIcon from "@components/icons/CheckIcon.svelte";
   import VectorWhat from "@vectors/VectorWhat.svelte";
   import Saos from "saos";
 
@@ -27,27 +28,27 @@
         </div>
         <div class="text-center">
           <h2
-            class="text-5xl font-bold tracking-tight dark:text-white sm:text-6xl"
+            class="text-5xl font-bold tracking-tight sm:text-6xl"
           >
-            Que Ofrecemos <span class="text-k-green"></span>?
+          ¿Que Ofrecemos <span class="text-k-green"></span>?
           </h2>
           <p class="mt-6 text-lg leading-8 dark:text-gray-400">
             Somo una empresa de desarrollo de software que ofrece soluciones
             digitales para empresas y emprendedores. Nuestros servicios
-            incluyen: desarrollo de apps, sitios web, prototipos, diseño de UI &
-            UX y sistemas
+            incluyen <b>Desarrollo de apps, Sitios web, Prototipos, Diseño de UI &
+              UX y Sistemas a la medida.</b> 
           </p>
         </div>
-        <div class="flex justify-center content-center mt-4">
+        <div class="flex justify-center content-center mt-10">
           <div
-            class="relative rounded-full px-3 py-1 text-sm
-            leading-6 dark:border border-k-green text-white-400
-            ring-1 ring-green-900/10 hover:ring-green-900/20
+            class="relative rounded-full px-4 py-3 text-sm
+            leading-6 dark:border
+            ring-1 ring-black
             hover:scale-110"
           >
-            <a href="/" class="font-semibold text-k-green">
+            <a href="https://calendly.com/krowen/30min" class="font-semibold">
               <span aria-hidden="true"></span>
-              Check services now.
+              Agenda tu asesoria
             </a>
           </div>
         </div>
@@ -68,10 +69,16 @@
             <p class="mt-2 leading-8 dark:text-gray-400">
               La calidad de nuestros servicios es nuestra prioridad. Nuestro
               equipo de profesionales se encarga de ofrecer soluciones de
-              calidad usando tecnicas, metodologias y tecnologias modernas.
+              calidad usando <b>tecnicas, metodologias y tecnologias modernas.</b>
             </p>
           </article>
-          <div class="w-full flex justify-center content-center">
+          <div class="w-full flex flex-col justify-center content-center">
+            <div class="flex flex-wrap items-center pt-5">
+              <CheckIcon />
+              <h4 class="text-left m-2 font-bold text-md">
+                 Beneficios
+              </h4>
+            </div>
             <ul class="w-full list-none flex flex-col">
               {#each beneficios as beneficio (beneficio)}
                 <li class="border-b dark:border-white border-black">

@@ -30,9 +30,8 @@
       >
         <p class="col-start-1 row-start-3 mt-4 max-w-lg text-lg text-left">
           Creamos productos digitales que resuelven problemas y generan impacto.
-          usando tecnologías modernas y metodologías ágiles. apostamos por la <br
-          />
-          calidad y la innovación br en las soluciones que ofrecemos.
+          Usamos tecnologías modernas y metodologías ágiles. apostamos por la <br>
+          calidad y la innovación en las soluciones que ofrecemos.
         </p>
       </Saos>
 
@@ -40,19 +39,11 @@
         class="col-start-1 row-start-4 mt-10 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
       >
         <a
-          href="#browse"
+          href="/contacto"
           class="inline-flex justify-center items-center rounded-lg text-sm font-semibold py-3 px-4 border border-k-purple text-k-purple hover:scale-105"
           ><span
             >Contactar <span class="hidden sm:inline">ahora</span>
             <span>→</span></span
-          ></a
-        >
-        <a
-          href="#browse"
-          class="inline-flex justify-center items-center rounded-lg text-sm font-semibold py-3 px-4 hover:scale-105"
-          ><span
-            >Contactar <span class="hidden sm:inline">ahora</span>
-            <span aria-hidden="true">→</span></span
           ></a
         >
       </div>
