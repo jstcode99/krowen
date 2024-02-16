@@ -43,7 +43,7 @@
       </p>
       <a
         class="text-base font-semibold text-k-purple hover:text-k-gray dark:hover:text-white"
-        href="/templates"
+        href="/servicios"
         >Ver catalogo de productos <span aria-hidden="true">→</span></a
       >
     </article>

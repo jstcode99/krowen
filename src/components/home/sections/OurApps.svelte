@@ -42,7 +42,7 @@
       <a
         class="text-base font-semibold text-k-green hover:text-black dark:hover:text-white
          mt-2"
-        href="/components">Cotizar un producto <span>→</span></a
+        href="/contacto">Cotizar un producto <span>→</span></a
       >
     </article>
     <!-- head productos -->
