@@ -62,8 +62,7 @@
   {#each slides as slide, index (index)}
     {#if currentSlide === index}
       <div
-        transition:blur={{ amount: 10 }}
-        class="absolute inset-0 flex justify-center items-center"
+        class="absolute inset-0 flex justify-center items-center animate-blur"
       >
         <p class="px-4 text-sm leading-6 sm:px-0 md:hidden">
           {slide.description}

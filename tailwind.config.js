@@ -11,9 +11,15 @@ export default {
     },
     extend: {
       animation: {
-        'background-shine': 'background-shine 2s linear infinite'
+        'background-shine': 'background-shine 2s linear infinite',
+        'blur': 'blur 400ms linear',
       },
       keyframes: {
+        'blur': {
+          '0%': { filter: "blur(5px)" },
+          '75%': { filter: "blur(3px)" },
+          '100%': { filter: "blur(0px)" },
+        },
         'background-shine': {
           'from': {
             'backgroundPosition': '0 0'
