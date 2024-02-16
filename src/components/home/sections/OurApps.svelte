@@ -3,19 +3,19 @@
 
   const products = [
     {
-      title: "Application UI",
+      title: "Sitema de turnos",
       description:
-        "Form layouts, tables, dialogs — everything you need to build beautiful responsive web applications.",
+        "Sistema de turnos, sistema de reservas, sistema de citas <br><br>— Todo lo que tu necesitas para tu negocio.",
     },
     {
-      title: "Marketing",
+      title: "Tiendas en linea",
       description:
-        "Heroes, feature sections, newsletter sign up forms — everything you need to build beautiful marketing websites.",
+        "Tiendas en linea, carritos de compra, vistas de productos <br><br>— Ofrece y vende en linea.",
     },
     {
-      title: "Ecommerce",
+      title: "Chatbots",
       description:
-        "Checkout forms, shopping carts, product views — everything you need to build your next ecommerce front-end.",
+        "Chatbots, asistentes virtuales, sistemas de mensajeria <br><br>— Contecta con clientes, soporte en linea y embudo de ventas.",
     },
   ];
 </script>
@@ -40,7 +40,8 @@
         sistemas de gestion de proyectos.
       </p>
       <a
-        class="text-base font-semibold text-k-green hover:text-k-green mt-2"
+        class="text-base font-semibold text-k-green hover:text-black dark:hover:text-white
+         mt-2"
         href="/components">Cotizar un producto <span>→</span></a
       >
     </article>
@@ -53,9 +54,7 @@
       >
         {#each products as product (product)}
           <div
-            class="-mt-px pb-6 pt-4 text-left md:pb-10
-          md:pt-8 border-t border-transparent
-          cursor-pointer hover:border-k-green"
+            class="-mt-px pb-6 pt-4 text-left md:pb-10 md:pt-8 border-t border-transparent cursor-pointer hover:border-k-green"
           >
             <h3>
               <button
@@ -65,7 +64,7 @@
               </button>
             </h3>
             <p class="mt-2 hidden text-sm leading-6 md:block">
-              {product.description}
+              {@html product.description}
             </p>
           </div>
         {/each}

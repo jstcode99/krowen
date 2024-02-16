@@ -40,17 +40,15 @@
           </p>
         </div>
         <div class="flex justify-center content-center mt-10">
-          <div
+          <a
+            href="https://calendly.com/krowen/30min"
             class="relative rounded-full px-4 py-3 text-sm
             leading-6 dark:border
             ring-1 ring-black
-            hover:scale-110"
+            hover:scale-110 font-semibold"
           >
-            <a href="https://calendly.com/krowen/30min" class="font-semibold">
-              <span aria-hidden="true"></span>
-              Agenda tu asesoria
-            </a>
-          </div>
+            Agenda tu asesoria
+          </a>
         </div>
       </article>
     </Saos>

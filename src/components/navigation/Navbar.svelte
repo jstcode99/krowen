@@ -53,8 +53,7 @@
             id="theme-toggle"
             type="button"
             on:click={toggleTheme}
-            class="text-black dark:text-k-green hover:opacity-80
-                focus:outline-none focus:ring-4 rounded-lg text-sm p-2.5"
+            class="text-black dark:text-k-green hover:opacity-80 focus:outline-none focus:ring-4 rounded-lg text-sm p-2.5"
           >
             {#if isDark}
               <SunIcon />
@@ -64,10 +63,7 @@
           </button>
           <!-- Estimar  -->
           <a
-            class="text-black dark:text-white
-          focus:outline-none focus:ring-4 font-medium
-          rounded-lg text-sm px-5 py-2.5 me-2 mb-2
-        border-black dark:border-white border-2 hover:scale-105"
+            class="text-black dark:text-white focus:outline-none focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 border-black dark:border-white border-2 hover:scale-105"
             href="https://calendly.com/krowen/30min"
             target="_blank"
             rel="noopener noreferrer"
@@ -81,9 +77,7 @@
           id="theme-toggle"
           type="button"
           on:click={toggleTheme}
-          class="text-black dark:text-k-green hover:opacity-80
-            focus:outline-none focus:ring-4 rounded-lg text-sm p-2.5"
-        >
+          class="text-black dark:text-k-green hover:opacity-80 focus:outline-none focus:ring-4 rounded-lg text-sm p-2.5">
           {#if isDark}
             <SunIcon />
           {:else}
@@ -92,11 +86,7 @@
         </button>
         <button
           type="button"
-          class="bg-transparent inline-flex items-center
-                        justify-center p-2 rounded-md
-                        hover:text-white hover:bg-gray-700
-                        focus:outline-none focus:ring-2 focus:ring-offset-2
-                        focus:ring-offset-gray-800 focus:ring-white"
+          class="bg-transparent inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
           aria-controls="mobile-menu"
           aria-expanded="false"
           on:click={toggleMenu}

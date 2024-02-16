@@ -122,8 +122,7 @@
         <div class="flex flex-wrap justify-center gap-2 mt-4">
           {#each integrations as integration (integration)}
             <div
-              class="flex items-center text-sm font-medium cursor-pointer border border-gray-400 rounded-lg
-          hover:scale-105 duration-300 hover:shadow-sm transform-gpu"
+              class="flex items-center text-sm font-medium cursor- border border-gray-400 rounded-lg hover:scale-105 duration-300 hover:shadow-sm transform-gpu"
             >
               <div class="mx-2 my-2">
                 <svelte:component this={integration.icon} size={35} />
@@ -157,10 +156,7 @@
         <div class="mt-12 flex gap-2">
           {#each heros as hero (hero.id)}
             <div
-              class="relative flex-shrink-0 p-4
-        inline-flex h-full animate-background-shine cursor-pointer items-center
-        rounded justify-center border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)]
-        bg-[length:250%_100%] text-xs font-medium text-gray-300"
+              class="relative flex-shrink-0 p-4 inline-flex h-full animate-background-shine cursor-pointer items-center rounded justify-center border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] bg-[length:250%_100%] text-xs font-medium text-gray-300"
             >
               <div
                 class="relative z-10 overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5"

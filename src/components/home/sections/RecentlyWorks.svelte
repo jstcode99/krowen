@@ -42,7 +42,7 @@
         usuario.
       </p>
       <a
-        class="text-base font-semibold text-k-purple hover:text-k-gray"
+        class="text-base font-semibold text-k-purple hover:text-k-gray dark:hover:text-white"
         href="/templates"
         >Ver catalogo de productos <span aria-hidden="true">→</span></a
       >

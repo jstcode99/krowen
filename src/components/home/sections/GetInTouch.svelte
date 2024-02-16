@@ -66,11 +66,7 @@
         <div class="flex items-start mb-6">
           <button
             type="button"
-            class="w-full text-k-gray-light dark:text-white
-              focus:outline-none focus:ring-4 font-medium
-              rounded-lg text-sm px-5 py-2.5 me-2 mb-2
-              border-gray-600 placeholder-gray-400
-              focus:bg-k-gray focus:bg-k-gray-dark border-2 hover:scale-105"
+            class="w-full text-k-gray-light dark:text-white focus:outline-none focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 border-gray-600 placeholder-gray-400 focus:bg-k-gray focus:bg-k-gray-dark border-2 hover:scale-105"
           >
             Enviar mensaje
           </button>

@@ -12,7 +12,7 @@
       description:
         "El concepto de la interfaz es confuso y no permite al usuario interactuar de manera eficiente",
       color: "bg-red-500",
-      icon: CheckIcon,
+      icon: CloseIcon,
       src: badUIUX,
       webp: badUIUXWebp,
     },
@@ -21,8 +21,8 @@
       description:
         "El concepto de la interfaz es claro y permite al usuario interactuar de manera eficiente",
       color: "bg-yellow-300",
-      icon: CloseIcon,
-      src: badUIUX,
+      icon: CheckIcon,
+      src: goodUIUX,
       webp: goodUIUXWebp,
     },
   ];
