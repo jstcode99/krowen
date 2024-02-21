@@ -114,7 +114,7 @@
         <p
           class="mt-4 text-3xl font-extrabold tracking-[-0.04em] sm:text-5xl sm:leading-[3.5rem]"
         >
-          Desarrollamos proctos con diferentes integraciones
+          Desarrollamos productos con diferentes integraciones
         </p>
       </Saos>
 
