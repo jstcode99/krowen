@@ -30,7 +30,8 @@
       >
         <p class="col-start-1 row-start-3 mt-4 max-w-lg text-lg text-left">
           Creamos productos digitales que resuelven problemas y generan impacto.
-          Usamos tecnologías modernas y metodologías ágiles. apostamos por la <br>
+          Usamos tecnologías modernas y metodologías ágiles. apostamos por la <br
+          />
           calidad y la innovación en las soluciones que ofrecemos.
         </p>
       </Saos>
@@ -51,18 +52,14 @@
     <div
       class="hidden absolute lg:block xl:block right-[10%] md:right-[-0%] xl:top-0 md:top-[20%] opacity-90"
     >
-      <Saos
-        animation={"slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
-      >
-        <picture>
-          <source srcset={heroWebp} type="image/webp" />
-          <img
-            class="object-cover h-full xl:w-[1100px] lg:w-[600px]"
-            src={hero}
-            alt="Desarrollo tus ideas con nosotros"
-          />
-        </picture>
-      </Saos>
+      <picture>
+        <source srcset={heroWebp} type="image/webp" />
+        <img
+          class="object-cover h-full xl:w-[1100px] lg:w-[600px]"
+          src={hero}
+          alt="Desarrollo tus ideas con nosotros"
+        />
+      </picture>
     </div>
   </div>
 </section>

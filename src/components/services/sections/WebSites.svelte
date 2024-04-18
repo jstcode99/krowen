@@ -21,7 +21,7 @@
         "Compatible con dispositivos móviles.",
         "Hosting y dominio básicos incluidos.",
       ],
-      link: `https://api.whatsapp.com/send?phone=573168314191&text=Hola%2C%20estoy%20interesado%20%F0%9F%A4%94%2C%20en%20el%20servicio%20de%20Web%20site%20*Basic*%20con%20ustedes`
+      link: `https://api.whatsapp.com/send?phone=573168314191&text=Hola%2C%20estoy%20interesado%20%F0%9F%A4%94%2C%20en%20el%20servicio%20de%20Web%20site%20*Basic*%20con%20ustedes`,
     },
     {
       id: 2,
@@ -38,7 +38,7 @@
         "SEO básico para mejorar la visibilidad en buscadores.",
         "Integración con herramientas de análisis.",
       ],
-      link: `https://api.whatsapp.com/send?phone=573168314191&text=Hola%2C%20estoy%20interesado%20%F0%9F%A4%94%2C%20en%20el%20servicio%20de%20Web%20site%20*Estandar*%20con%20ustedes`
+      link: `https://api.whatsapp.com/send?phone=573168314191&text=Hola%2C%20estoy%20interesado%20%F0%9F%A4%94%2C%20en%20el%20servicio%20de%20Web%20site%20*Estandar*%20con%20ustedes`,
     },
     {
       id: 3,
@@ -55,7 +55,7 @@
         "Optimización avanzada de SEO y rendimiento.",
         "Seguridad mejorada con certificados SSL y copias de seguridad automáticas.",
       ],
-      link: `https://api.whatsapp.com/send?phone=573168314191&text=Hola%2C%20estoy%20interesado%20%F0%9F%A4%94%2C%20en%20el%20servicio%20de%20Web%20site%20*Pro*%20con%20ustedes`
+      link: `https://api.whatsapp.com/send?phone=573168314191&text=Hola%2C%20estoy%20interesado%20%F0%9F%A4%94%2C%20en%20el%20servicio%20de%20Web%20site%20*Pro*%20con%20ustedes`,
     },
   ];
 
@@ -96,20 +96,16 @@
       <p class="mt-6 text-lg leading-8 dark:text-gray-400">
         En el competitivo mundo digital actual, es crucial contar con una página
         web que no solo sea visualmente atractiva, sino también altamente
-        funcional y optimizada para los motores de búsqueda. En <span class="text-k-green">krowen</span>, ofrecemos servicios de desarrollo de páginas web de tres
-        niveles diferentes para adaptarnos a las necesidades y objetivos de tu
-        empresa: Básica, Estándar y Profesional.
+        funcional y optimizada para los motores de búsqueda. En <span
+          class="text-k-green">krowen</span
+        >, ofrecemos servicios de desarrollo de páginas web de tres niveles
+        diferentes para adaptarnos a las necesidades y objetivos de tu empresa:
+        Básica, Estándar y Profesional.
       </p>
     </div>
     <div class="w-full flex flex-wrap justify-center gap-6">
       {#each webSites as webSite (webSite.id)}
-        <Saos
-          animation={`slide-in-right 0.${
-            5 + webSite.id * 2
-          }s cubic-bezier(0.25, 0.46, 0.45, 0.94) both`}
-        >
-          <CardWebSite {webSite} />
-        </Saos>
+        <CardWebSite {webSite} />
       {/each}
     </div>
   </div>
@@ -133,43 +129,40 @@
       >
     </h2>
   </Saos>
-  <Saos
-    animation={"slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
-  >
-    <div class="space-y-10 py-14 sm:pb-20 sm:pt-14 lg:space-y-12">
-      <div
-        class="grid w-full grid-cols-1 gap-y-5 gap-x-10 sm:gap-y-10 lg:grid-cols-[2fr,4fr] 2xl:gap-x-16"
-      >
-        {#each qualities as quality (quality.id)}
-          <div
-            class="flex items-center justify-center gap-x-5 lg:justify-start lg:gap-x-10"
+
+  <div class="space-y-10 py-14 sm:pb-20 sm:pt-14 lg:space-y-12">
+    <div
+      class="grid w-full grid-cols-1 gap-y-5 gap-x-10 sm:gap-y-10 lg:grid-cols-[2fr,4fr] 2xl:gap-x-16"
+    >
+      {#each qualities as quality (quality.id)}
+        <div
+          class="flex items-center justify-center gap-x-5 lg:justify-start lg:gap-x-10"
+        >
+          <div class="text-white">
+            <svelte:component this={quality.icon} size={65} />
+          </div>
+          <p
+            class="whitespace-nowrap text-xl font-bold -tracking-[0.02em] text-white sm:text-2xl"
           >
-            <div class="text-white">
-              <svelte:component this={quality.icon} size={65} />
-            </div>
-            <p
-              class="whitespace-nowrap text-xl font-bold -tracking-[0.02em] text-white sm:text-2xl"
+            {quality.title}
+          </p>
+        </div>
+        <div
+          class="flex flex-wrap justify-center gap-2 sm:gap-5 lg:justify-start"
+        >
+          {#each quality.tags as tag (tag)}
+            <div
+              class="flex max-h-[72px] border border-dashed border-k-green items-center rounded-xl px-6 py-3 bg-gradient-to-b from-gray-900 to-black text-white"
             >
-              {quality.title}
-            </p>
-          </div>
-          <div
-            class="flex flex-wrap justify-center gap-2 sm:gap-5 lg:justify-start"
-          >
-            {#each quality.tags as tag (tag)}
-              <div
-                class="flex max-h-[72px] border border-dashed border-k-green items-center rounded-xl px-6 py-3 bg-gradient-to-b from-gray-900 to-black text-white"
+              <p
+                class="text-[18px] font-semibold tracking-[0.02em] 2xl:text-[23px]"
               >
-                <p
-                  class="text-[18px] font-semibold tracking-[0.02em] 2xl:text-[23px]"
-                >
-                  {tag}
-                </p>
-              </div>
-            {/each}
-          </div>
-        {/each}
-      </div>
+                {tag}
+              </p>
+            </div>
+          {/each}
+        </div>
+      {/each}
     </div>
-  </Saos>
+  </div>
 </section>

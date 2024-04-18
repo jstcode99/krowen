@@ -12,14 +12,14 @@
       type: "App",
       description: "Aplicación de mensajería instantanea",
       img: partner,
-      webp: referidosWebp,
+      webp: partnerWebp,
     },
     {
       title: "ReferidosCO",
       type: "App",
       description: "Aplicación de mensajería instantanea",
       img: referidos,
-      webp: partnerWebp,
+      webp: referidosWebp,
     },
   ];
 </script>

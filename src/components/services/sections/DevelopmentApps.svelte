@@ -15,23 +15,24 @@
       <h2 class="text-3xl font-bold tracking-tight dark:text-white sm:text-6xl">
         Desarrollo de <span class="text-k-green">Apps</span> para empresas
       </h2>
-      <p class="mt-6 text-lg leading-8 dark:text-gray-400">
-        Integramos funcionalidades avanzadas como GPS, pagos en línea,
-        notificaciones push y más, para ofrecer una experiencia de usuario
-        superior. Nuestras aplicaciones están diseñadas para ser intuitivas,
-        seguras y altamente funcionales, garantizando la satisfacción del
-        usuario y la fidelidad a tu marca.
-      </p>
     </Saos>
+
+    <p class="mt-6 text-lg leading-8 dark:text-gray-400">
+      Integramos funcionalidades avanzadas como GPS, pagos en línea,
+      notificaciones push y más, para ofrecer una experiencia de usuario
+      superior. Nuestras aplicaciones están diseñadas para ser intuitivas,
+      seguras y altamente funcionales, garantizando la satisfacción del usuario
+      y la fidelidad a tu marca.
+    </p>
   </div>
   <div class="flex justify-center mt-10">
-    <Saos
-      animation={"slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
-    >
-      <picture>
-        <source srcset={appImageWebp} type="image/webp" />
-        <img src={appImage} class="max-w-72 object-cover h-full sm:w-72 lg:h-full md:w-72  w-96" alt="Desarrollo de apps a la medida"  />
-      </picture>
-    </Saos>
+    <picture>
+      <source srcset={appImageWebp} type="image/webp" />
+      <img
+        src={appImage}
+        class="max-w-72 object-cover h-full sm:w-72 lg:h-full md:w-72 w-96"
+        alt="Desarrollo de apps a la medida"
+      />
+    </picture>
   </div>
 </div>

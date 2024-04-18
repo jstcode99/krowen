@@ -149,28 +149,24 @@
         >
       </div>
     </div>
-    <Saos
-      animation={"slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
-    >
-      <div class="hidden mt-8 lg:block">
-        <div class="mt-12 flex gap-2">
-          {#each heros as hero (hero.id)}
+    <div class="hidden mt-8 lg:block">
+      <div class="mt-12 flex gap-2">
+        {#each heros as hero (hero.id)}
+          <div
+            class="relative flex-shrink-0 p-4 inline-flex h-full animate-background-shine cursor-pointer items-center rounded justify-center border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] bg-[length:250%_100%] text-xs font-medium text-gray-300"
+          >
             <div
-              class="relative flex-shrink-0 p-4 inline-flex h-full animate-background-shine cursor-pointer items-center rounded justify-center border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] bg-[length:250%_100%] text-xs font-medium text-gray-300"
+              class="relative z-10 overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5"
             >
-              <div
-                class="relative z-10 overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5"
-              >
-                <picture>
-                  <source srcset={hero.webp} type="image/webp" />
-                  <img class="h-[404px] w-[336px]" src={hero.src} alt="logo" />
-                </picture>
-              </div>
+              <picture>
+                <source srcset={hero.webp} type="image/webp" />
+                <img class="h-[404px] w-[336px]" src={hero.src} alt="logo" />
+              </picture>
             </div>
-          {/each}
-        </div>
+          </div>
+        {/each}
       </div>
-    </Saos>
+    </div>
   </div>
   <div class="relative z-20 sm:z-auto">
     <div class="mx-auto max-w-container px-4 pb-16 sm:px-6 lg:px-4">
