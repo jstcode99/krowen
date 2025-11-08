@@ -1,7 +1,6 @@
 <script>
   import Input from "@ui/Input.svelte";
   import VectorGlobo from "@vectors/VectorGlobo.svelte";
-  import Saos from "saos";
 </script>
 
 <div class="w-full px-6 lg:px-8 bg-k-gray-dark">
@@ -10,23 +9,16 @@
       <VectorGlobo />
     </div>
     <div class="text-left">
-      <Saos
-        animation={"slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
-      >
-        <h2 class="text-5xl font-bold tracking-tight text-white sm:text-6xl">
-          Contactanos ahora!
-        </h2>
-      </Saos>
+      <h2 class="text-5xl font-bold tracking-tight text-white sm:text-6xl">
+        Contactanos ahora!
+      </h2>
       <p class="mt-6 text-lg leading-8 text-white">
-        Envianos un mensaje y nos pondremos en contacto contigo lo antes 
+        Envianos un mensaje y nos pondremos en contacto contigo lo antes
         posible.
       </p>
     </div>
     <div class="w-full flex justify-center content-center">
       <form class="w-full flex flex-col">
-        <Saos
-        animation={"slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
-      >
         <div class="mb-6">
           <Input
             value={""}
@@ -71,7 +63,6 @@
             Enviar mensaje
           </button>
         </div>
-      </Saos>
       </form>
     </div>
   </div>

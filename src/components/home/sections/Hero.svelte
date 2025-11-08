@@ -1,8 +1,6 @@
 <script>
   import hero from "$lib/assets/sections/hero/hero-home.png";
   import heroWebp from "$lib/assets/sections/hero/hero-home.webp";
-
-  import Saos from "saos";
 </script>
 
 <section class="relative xl:mt-16">
@@ -15,26 +13,18 @@
       <div class="mb-3 text-xl font-semibold leading-7 text-k-purple text-left">
         Acompañamiento desde la idea hasta la implementación
       </div>
-      <Saos
-        animation={"tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both"}
+      <h1
+        class="col-start-1 row-start-2 mt-4 text-4xl font-extrabold tracking-tight sm:text-7xl text-left"
       >
-        <h1
-          class="col-start-1 row-start-2 mt-4 text-4xl font-extrabold tracking-tight sm:text-7xl text-left"
-        >
-          Desarrolla tus <span class="text-k-purple">ideas</span> <br />con
-          nosotros.
-        </h1>
-      </Saos>
-      <Saos
-        animation={"tracking-in-contract-bck-bottom 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both"}
-      >
-        <p class="col-start-1 row-start-3 mt-4 max-w-lg text-lg text-left">
-          Creamos productos digitales que resuelven problemas y generan impacto.
-          Usamos tecnologías modernas y metodologías ágiles. apostamos por la <br
-          />
-          calidad y la innovación en las soluciones que ofrecemos.
-        </p>
-      </Saos>
+        Desarrolla tus <span class="text-k-purple">ideas</span> <br />con
+        nosotros.
+      </h1>
+      <p class="col-start-1 row-start-3 mt-4 max-w-lg text-lg text-left">
+        Creamos productos digitales que resuelven problemas y generan impacto.
+        Usamos tecnologías modernas y metodologías ágiles. apostamos por la <br
+        />
+        calidad y la innovación en las soluciones que ofrecemos.
+      </p>
 
       <div
         class="col-start-1 row-start-4 mt-10 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"

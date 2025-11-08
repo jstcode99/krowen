@@ -10,7 +10,6 @@
   import SendToBackIcon from "@components/icons/SendToBackIcon.svelte";
   import CheckUserIcon from "@components/icons/CheckUserIcon.svelte";
   import PaypalIcon from "@components/icons/PaypalIcon.svelte";
-  import Saos from "saos";
   import landing1 from "$lib/assets/sections/hero/landing-1.png";
   import landing2 from "$lib/assets/sections/hero/landing-2.png";
   import landing3 from "$lib/assets/sections/hero/landing-3.png";
@@ -108,17 +107,11 @@
       <h1 class="text-base font-semibold leading-7 text-k-green">
         Aplicacions, Web sites, E-commerce, SEO, Marketing Digital
       </h1>
-      <Saos
-        animation={"slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
-      >
         <p
           class="mt-4 text-3xl font-extrabold tracking-[-0.04em] sm:text-5xl sm:leading-[3.5rem]"
         >
           Desarrollamos productos con diferentes integraciones
         </p>
-      </Saos>
-
-      <Saos animation={"bounce-in-top 1.5s both"}>
         <div class="flex flex-wrap justify-center gap-2 mt-4">
           {#each integrations as integration (integration)}
             <div
@@ -131,7 +124,6 @@
             </div>
           {/each}
         </div>
-      </Saos>
 
       <p class="mt-4 text-base leading-7">
         Entregamos proyectos con las integraciones que necesitas para alcanzar a

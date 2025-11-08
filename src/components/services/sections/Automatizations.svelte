@@ -1,22 +1,17 @@
 <script>
   import app from "$lib/assets/sections/automatizations/app.png";
   import appWebp from "$lib/assets/sections/automatizations/app.webp";
-  import Saos from "saos";
 </script>
 
 <div class="mx-auto max-w-6xl flex flex-wrap gap-x-10">
   <div
     class="text-left lg:w-6/12 p-4 md:w-full flex flex-col justify-start items-start"
   >
-    <Saos
-      animation={"slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both"}
-    >
       <h1 class="text-left text-6xl mb-10 mt-12 font-bold">
         <span class="block xl:inline text-k-purple">Potencia</span> tu Negocio
         en el
         <span class="block xl:inline text-k-purple"> Mundo Digital!</span>
       </h1>
-    </Saos>
     <div class="mb-8">
       <p class="text-left font-bold mb-4">
         Reduce costos en implementacion y <span class="block sm:inline">

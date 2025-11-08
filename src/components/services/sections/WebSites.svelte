@@ -3,7 +3,6 @@
   import AdaptativeIcon from "@components/icons/AdaptativeIcon.svelte";
   import EqualizablesIcon from "@components/icons/EqualizablesIcon.svelte";
   import GlobeIcon from "@components/icons/GlobeIcon.svelte";
-  import Saos from "saos";
 
   const webSites = [
     {
@@ -84,15 +83,9 @@
 <div class="w-full px-6 lg:px-8">
   <div class="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56 flex flex-col gap-y-10">
     <div class="text-left">
-      <Saos
-        animation={"tracking-in-contract-bck-bottom 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both"}
-      >
-        <h2
-          class="text-3xl font-bold tracking-tight dark:text-white sm:text-6xl"
-        >
-          <span class="text-k-green">Web Site</span> para empresas
-        </h2>
-      </Saos>
+      <h2 class="text-3xl font-bold tracking-tight dark:text-white sm:text-6xl">
+        <span class="text-k-green">Web Site</span> para empresas
+      </h2>
       <p class="mt-6 text-lg leading-8 dark:text-gray-400">
         En el competitivo mundo digital actual, es crucial contar con una página
         web que no solo sea visualmente atractiva, sino también altamente
@@ -116,19 +109,15 @@
     md:px-12 lg:px-16
     bg-gradient-to-r from-gray-900 to-black"
 >
-  <Saos
-    animation={"puff-in-center 0.8s cubic-bezier(0.470, 0.000, 0.745, 0.715) both"}
+  <h2
+    class="pt-14 font-bold text-xl text-center text-white sm:pt-20 sm:text-md lg:text-left lg:text-xl 2xl:text-6xl"
   >
-    <h2
-      class="pt-14 font-bold text-xl text-center text-white sm:pt-20 sm:text-md lg:text-left lg:text-xl 2xl:text-6xl"
+    Buscas algo como esto ?
+    <span
+      class="text-md sm:text-md font-light lg:text-sm 2xl:text-6xl text-white"
+      >Conoce nuestros propuestas.</span
     >
-      Buscas algo como esto ?
-      <span
-        class="text-md sm:text-md font-light lg:text-sm 2xl:text-6xl text-white"
-        >Conoce nuestros propuestas.</span
-      >
-    </h2>
-  </Saos>
+  </h2>
 
   <div class="space-y-10 py-14 sm:pb-20 sm:pt-14 lg:space-y-12">
     <div
