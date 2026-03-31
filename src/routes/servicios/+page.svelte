@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
 
 	const services = [
 		{
@@ -147,10 +146,10 @@
 
 <!-- PAGE HERO -->
 <section class="page-hero">
-	<div class="ph-bg-text ">Servicios</div>
+	<div class="ph-bg-text">Servicios</div>
 	<div class="ph-content">
-		<div class="section-label enter">Lo que hacemos</div>
-		<h1 class="ph-title enter">Nuestros<br /><span class="ac">Servicios</span></h1>
+		<div class="section-label">Lo que hacemos</div>
+		<h1 class="ph-title">Nuestros<br /><span class="ac">Servicios</span></h1>
 		<p class="ph-sub">
 			Soluciones digitales completas para empresas y emprendedores. Del concepto al producto final.
 		</p>
@@ -175,11 +174,7 @@
 	<div class="sd-panel">
 		{#key activeService}
 			{@const s = services[activeService]}
-			<div
-			    class="sd-content"
-			    in:fade={{ duration: 400 + activeService * 5 }}
-			    out:fade={{ duration: 350 - activeService * 5 }}
-			>
+			<div class="sd-content">
 				<div class="sd-left">
 					<div class="sd-icon" style="color:{s.color}">{s.icon}</div>
 					<h2 class="sd-title">{s.name}</h2>
@@ -235,7 +230,7 @@
 </section>
 
 <!-- CTA -->
-<section class="cta-section reveal">
+<section class="cta-section">
 	<div class="section-label" style="color:var(--black)"><span></span>¿Listo para empezar?</div>
 	<h2 class="cta-title">Agenda tu asesoría<br />sin costo</h2>
 	<div class="cta-actions">
