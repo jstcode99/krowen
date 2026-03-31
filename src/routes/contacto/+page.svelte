@@ -147,7 +147,13 @@
 					<div class="section-label">Formulario de contacto</div>
 					<h2 class="form-title">Cuéntanos tu proyecto</h2>
 				</div>
-				<form onsubmit={(e) => { e.preventDefault(); handleSubmit(); }} class="contact-form">
+				<form
+					onsubmit={(e) => {
+						e.preventDefault();
+						handleSubmit();
+					}}
+					class="contact-form"
+				>
 					<div class="form-row">
 						<div class="form-group">
 							<label for="name">Nombre completo *</label>
@@ -198,7 +204,7 @@
 									type="button"
 									class="budget-opt"
 									class:active={form.budget === b}
-								onclick={() => (form.budget = b)}
+									onclick={() => (form.budget = b)}
 								>
 									{b}
 								</button>
