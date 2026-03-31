@@ -7,7 +7,7 @@
 	const projects = $state([
 		{
 			id: 1,
-			name: 'ReferidosCO',
+			name: 'ReferisCO',
 			category: 'App Móvil',
 			year: '2024',
 			desc: 'Plataforma de referidos con sistema de recompensas en tiempo real. Los usuarios ganan puntos canjeables por referir amigos a servicios.',
@@ -17,7 +17,7 @@
 		},
 		{
 			id: 2,
-			name: 'Partner Chat',
+			name: 'Partner App',
 			category: 'App Móvil',
 			year: '2024',
 			desc: 'App de mensajería instantánea para equipos de trabajo distribuidos con canales, hilos y compartición de archivos.',

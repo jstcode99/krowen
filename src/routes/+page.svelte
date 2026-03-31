@@ -1,22 +1,24 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import Counter from '../lib/components/Counter.svelte';
+	import { fade } from 'svelte/transition';
 
 	let scrollY = 0;
-	let mounted = false;
+	let mounted = $state(false);
 	type Testimonial = {
 		quote: string;
 		name: string;
 		role: string;
 		initial: string;
 	};
-	let activeTestimonial = 0;
+	let activeTestimonial = $state(0);
 
 	const testimonials: Testimonial[] = [
 		{
 			quote:
 				'Krowen transformó nuestra idea en una aplicación real en tiempo récord. El equipo entiende lo que quieres antes de que termines de explicarlo.',
 			name: 'Andrés Morales',
-			role: 'CEO, ReferidosCO',
+			role: 'CEO, ReferisCO',
 			initial: 'A'
 		},
 		{
@@ -53,7 +55,7 @@
 
 	const projects: Project[] = [
 		{
-			name: 'ReferidosCO',
+			name: 'ReferisCO',
 			category: 'App Móvil',
 			desc: 'Plataforma de referidos con sistema de recompensas en tiempo real.',
 			tag: 'React Native · Node.js',
@@ -61,7 +63,7 @@
 			color: '#c8ff00'
 		},
 		{
-			name: 'Partner Chat',
+			name: 'Partner App',
 			category: 'Mensajería',
 			desc: 'App de mensajería instantánea para equipos de trabajo distribuidos.',
 			tag: 'Flutter · Firebase',
@@ -325,9 +327,14 @@
 		<h2 class="section-title reveal reveal-d1" style="margin-bottom:40px">
 			Números<br />que hablan
 		</h2>
-		{#each [['50+', 'Proyectos entregados'], ['100%', 'Clientes satisfechos'], ['3+', 'Años de experiencia'], ['24/7', 'Soporte disponible']] as [num, label], i}
+		{#each [
+			['50', 'Proyectos entregados', '+'],
+			['100', 'Clientes satisfechos', '%'],
+			['5', 'Años de experiencia', '+'],
+			['24', 'Soporte disponible', 'h']
+		] as [num, label, suffix], i}
 			<div class="stat reveal reveal-d{i + 1}">
-				<div class="stat-num">{num}</div>
+				<div class="stat-num"><Counter value={parseInt(num)} suffix={suffix} /></div>
 				<div class="stat-label">{label}</div>
 			</div>
 		{/each}
@@ -346,7 +353,7 @@
 	<div class="section-label reveal">Lo que dicen</div>
 	<h2 class="section-title reveal reveal-d1">Testimonios</h2>
 
-	<div class="testi-container reveal reveal-d2">
+	<div class="testi-container reveal reveal-d2" in:fade out:fade>
 		<div class="testi-main">
 			<div class="quote-mark">"</div>
 			<blockquote class="testi-quote">
@@ -366,7 +373,7 @@
 				<button
 					class="testi-thumb"
 					class:active={i === activeTestimonial}
-					on:click={() => (activeTestimonial = i)}
+					onclick={() => (activeTestimonial = i)}
 				>
 					<div class="thumb-avatar">{t.initial}</div>
 					<div class="thumb-info">
@@ -383,7 +390,7 @@
 			<button
 				class="testi-dot"
 				class:active={i === activeTestimonial}
-				on:click={() => (activeTestimonial = i)}
+				onclick={() => (activeTestimonial = i)}
 			></button>
 		{/each}
 	</div>
@@ -549,7 +556,7 @@
 	}
 	.float-dots span {
 		width: 4px;
-		height: 4px;
+		height: px;
 		border-radius: 50%;
 		background: var(--accent);
 		opacity: 0.4;
@@ -1094,7 +1101,7 @@
 	}
 	.testi-dot {
 		width: 24px;
-		height: 3px;
+		height: 8px;
 		background: var(--border);
 		border: none;
 		cursor: pointer;
