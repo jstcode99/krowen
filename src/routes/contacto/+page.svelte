@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 
 	let form = $state({ name: '', email: '', company: '', service: '', budget: '', message: '' });

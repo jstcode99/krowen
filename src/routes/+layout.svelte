@@ -51,7 +51,6 @@
 	<meta name="instagram:image" content="https://krowen.lat/krowen.webp" />
 	<meta name="instagram:site" content="@krowen.lat" />
 </svelte:head>
-<a href="#main-content" class="skip-link">Saltar al contenido</a>
 <Navbar />
 <Cursor />
 <Reveal />

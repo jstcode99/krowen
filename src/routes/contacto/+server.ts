@@ -1,7 +1,6 @@
 import nodemailer from 'nodemailer';
 import { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } from '$env/static/private';
-import { json } from '@sveltejs/kit';
-import type { RequestHandler } from './$types';
+import { json, type RequestHandler } from '@sveltejs/kit';
 
 export const POST: RequestHandler = async ({ request }) => {
 	const { name, email, company, service, budget, message } = await request.json();
