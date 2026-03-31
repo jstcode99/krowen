@@ -49,7 +49,7 @@
 
   <div class="footer-bottom">
     <span>© 2026 Krowen™ — Colombia</span>
-    <span>Hecho con <span class="accent">✦</span> y mucho código</span>
+    <span>Hecho con <span class="accent">IA</span> & <span class="accent">Corazon</span></span>
   </div>
 </footer>
 
@@ -130,6 +130,7 @@
     font-size: 10px;
     color: var(--text-dim);
     letter-spacing: 1px;
+    margin-right: 100px
   }
 
   .accent { color: var(--accent); }
