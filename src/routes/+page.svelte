@@ -195,10 +195,16 @@
 		name="description"
 		content="Krowen es una agencia de software, marketing digital y soluciones tecnológicas de vanguardia en Colombia. Diseñamos apps móviles, desarrollo web a medida, chatbots, sistemas empresariales e implementamos SEO técnico, estrategias digitales data‑driven y transformación digital para pymes, startups y CEOs que buscan crecimiento orgánico, conversión y ROI real."
 	/>
-	<meta name="keywords" content="agencia de software, desarrollo de software a medida, desarrollo web y mobile, apps móviles, soluciones digitales, SEO técnico, SEO local, marketing digital, pymes Colombia, startups Colombia, estrategias data‑driven, transformación digital, innovación tecnológica, inteligencia artificial, chatbots para negocios, crecimiento orgánico, tráfico cualificado, conversión web, ROI digital, consultoría tecnológica, diseño UX/UI, consultoría para CEOs" />
+	<meta
+		name="keywords"
+		content="agencia de software, desarrollo de software a medida, desarrollo web y mobile, apps móviles, soluciones digitales, SEO técnico, SEO local, marketing digital, pymes Colombia, startups Colombia, estrategias data‑driven, transformación digital, innovación tecnológica, inteligencia artificial, chatbots para negocios, crecimiento orgánico, tráfico cualificado, conversión web, ROI digital, consultoría tecnológica, diseño UX/UI, consultoría para CEOs"
+	/>
 
 	<!-- Open Graph / Facebook -->
-	<meta property="og:title" content="Krowen — Agencia de software y soluciones digitales en Colombia" />
+	<meta
+		property="og:title"
+		content="Krowen — Agencia de software y soluciones digitales en Colombia"
+	/>
 	<meta
 		property="og:description"
 		content="Somos una agencia de software y soluciones digitales en Colombia: apps móviles, web, chatbots, SEO técnico, estrategias data‑driven y transformación digital para pymes, startups y CEOs que buscan crecimiento orgánico y resultados reales."
@@ -319,14 +325,9 @@
 		<h2 class="section-title reveal reveal-d1" style="margin-bottom:40px">
 			Números<br />que hablan
 		</h2>
-		{#each [
-			['50', 'Proyectos entregados', '+'],
-			['100', 'Clientes satisfechos', '%'],
-			['5', 'Años de experiencia', '+'],
-			['24', 'Soporte disponible', 'h']
-		] as [num, label, suffix], i}
+		{#each [['50', 'Proyectos entregados', '+'], ['100', 'Clientes satisfechos', '%'], ['5', 'Años de experiencia', '+'], ['24', 'Soporte disponible', 'h']] as [num, label, suffix], i}
 			<div class="stat reveal reveal-d{i + 1}">
-				<div class="stat-num"><Counter value={parseInt(num)} suffix={suffix} /></div>
+				<div class="stat-num"><Counter value={parseInt(num)} {suffix} /></div>
 				<div class="stat-label">{label}</div>
 			</div>
 		{/each}

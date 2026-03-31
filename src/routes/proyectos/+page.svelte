@@ -109,7 +109,10 @@
 		name="description"
 		content="Descubre el portafolio de proyectos de Krowen: desarrollo de apps móviles, sistemas web, chatbots, UI/UX y soluciones digitales personalizadas para pymes, startups y CEOs en Colombia. Innovación tecnológica y resultados reales."
 	/>
-	<meta name="keywords" content="portafolio de proyectos, desarrollo web, apps móviles, sistemas empresariales, chatbots, diseño UI/UX, soluciones digitales, pymes Colombia, startups Colombia, innovación tecnológica, transformación digital, consultoría tecnológica, proyectos de software a medida, tecnología para CEOs, proyectos digitales exitosos" />
+	<meta
+		name="keywords"
+		content="portafolio de proyectos, desarrollo web, apps móviles, sistemas empresariales, chatbots, diseño UI/UX, soluciones digitales, pymes Colombia, startups Colombia, innovación tecnológica, transformación digital, consultoría tecnológica, proyectos de software a medida, tecnología para CEOs, proyectos digitales exitosos"
+	/>
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:title" content="Proyectos y Portafolio de Software — Krowen" />
@@ -127,7 +130,9 @@
 	<div class="ph-bg-text">Work</div>
 	<div class="ph-content">
 		<div class="section-label enter" style="--delay: 0.2s">Portafolio</div>
-		<h1 class="ph-title enter" style="--delay: 0.3s">Proyectos<br /><span class="ac">Recientes</span></h1>
+		<h1 class="ph-title enter" style="--delay: 0.3s">
+			Proyectos<br /><span class="ac">Recientes</span>
+		</h1>
 		<p class="ph-sub">
 			Construcciones reales, con impacto real. Cada proyecto es una historia de colaboración.
 		</p>

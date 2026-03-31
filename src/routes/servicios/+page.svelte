@@ -123,7 +123,10 @@
 		name="description"
 		content="En Krowen ofrecemos desarrollo web, apps móviles, diseño UI/UX, chatbots, sistemas a medida y consultoría digital. Soluciones tecnológicas para pymes, startups y CEOs en Colombia enfocadas en innovación, eficiencia y crecimiento digital."
 	/>
-	<meta name="keywords" content="servicios de software, desarrollo web a medida, apps móviles, diseño UI/UX, chatbots para negocios, sistemas empresariales, consultoría digital, pymes Colombia, startups Colombia, transformación digital, innovación tecnológica, soluciones digitales personalizadas, estrategias digitales, crecimiento digital, SEO técnico, ROI, tecnología para CEOs" />
+	<meta
+		name="keywords"
+		content="servicios de software, desarrollo web a medida, apps móviles, diseño UI/UX, chatbots para negocios, sistemas empresariales, consultoría digital, pymes Colombia, startups Colombia, transformación digital, innovación tecnológica, soluciones digitales personalizadas, estrategias digitales, crecimiento digital, SEO técnico, ROI, tecnología para CEOs"
+	/>
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:title" content="Servicios de Software y Soluciones Digitales — Krowen" />
@@ -152,11 +155,7 @@
 <section class="service-detail-section">
 	<div class="sd-tabs">
 		{#each services as s, i}
-			<button
-				class="sd-tab"
-				class:active={i === activeService}
-				onclick={() => (activeService = i)}
-			>
+			<button class="sd-tab" class:active={i === activeService} onclick={() => (activeService = i)}>
 				<span class="sd-tab-num">{s.num}</span>
 				<span class="sd-tab-name">{s.name}</span>
 			</button>

@@ -152,7 +152,7 @@ a {
 }
 
 .enter {
-    opacity: 0;
+	opacity: 0;
 	animation: enter 0.4s ease forwards;
 	animation-delay: var(--delay, 0s);
 	animation-fill-mode: both;

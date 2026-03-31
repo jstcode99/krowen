@@ -9,15 +9,16 @@
 
 	let { children } = $props();
 </script>
-<svelte:head>
-  <link rel="icon" type="image/svg" href='/favicons/favicon.ico' />
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
-  <link rel="android-chrome" sizes="192x192" href="/favicons/android-chrome-192x192.png" />
-  <link rel="android-chrome" sizes="512x512" href="/favicons/android-chrome-512x512.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
 
- 	<!-- facebook -->
+<svelte:head>
+	<link rel="icon" type="image/svg" href="/favicons/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+	<link rel="android-chrome" sizes="192x192" href="/favicons/android-chrome-192x192.png" />
+	<link rel="android-chrome" sizes="512x512" href="/favicons/android-chrome-512x512.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+	<!-- facebook -->
 	<meta name="facebook:card" content="summary_large_image" />
 	<meta name="facebook:title" content="Proyectos y Portafolio de Software — Krowen" />
 	<meta
@@ -25,9 +26,12 @@
 		content="Portafolio de Krowen: apps móviles, sistemas web, chatbots, UI/UX y soluciones digitales para pymes, startups y CEOs en Colombia. Proyectos innovadores y resultados medibles."
 	/>
 	<meta name="facebook:image" content="https://krowen.lat/krowen.webp" />
- 	<!-- linkedin -->
+	<!-- linkedin -->
 	<meta name="linkedin:card" content="summary_large_image" />
-	<meta name="linkedin:title" content="Krowen — Agencia de software y soluciones digitales para pymes y startups en Colombia" />
+	<meta
+		name="linkedin:title"
+		content="Krowen — Agencia de software y soluciones digitales para pymes y startups en Colombia"
+	/>
 	<meta
 		name="linkedin:description"
 		content="Portafolio de Krowen: apps móviles, sistemas web, chatbots, UI/UX y soluciones digitales para pymes, startups y CEOs en Colombia. Proyectos innovadores y resultados medibles."
@@ -36,7 +40,10 @@
 
 	<!-- Instagram -->
 	<meta name="instagram:card" content="summary_large_image" />
-	<meta name="instagram:title" content="Krowen — Agencia de software y soluciones digitales para pymes y startups en Colombia" />
+	<meta
+		name="instagram:title"
+		content="Krowen — Agencia de software y soluciones digitales para pymes y startups en Colombia"
+	/>
 	<meta
 		name="instagram:description"
 		content="Portafolio de Krowen: apps móviles, sistemas web, chatbots, UI/UX y soluciones digitales para pymes, startups y CEOs en Colombia. Proyectos innovadores y resultados medibles."

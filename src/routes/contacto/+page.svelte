@@ -72,7 +72,10 @@
 		name="description"
 		content="Contáctanos para cotizar tu proyecto digital: desarrollo web, apps móviles, chatbots, UI/UX y sistemas a medida. Respuesta rápida en menos de 24 horas para pymes, startups y CEOs en Colombia."
 	/>
-	<meta name="keywords" content="contacto agencia de software, cotización proyectos digitales, desarrollo web, apps móviles, chatbots, UI/UX, sistemas a medida, consultoría digital, pymes Colombia, startups Colombia, CEO, innovación tecnológica, transformación digital, soluciones digitales personalizadas, contacto rápido" />
+	<meta
+		name="keywords"
+		content="contacto agencia de software, cotización proyectos digitales, desarrollo web, apps móviles, chatbots, UI/UX, sistemas a medida, consultoría digital, pymes Colombia, startups Colombia, CEO, innovación tecnológica, transformación digital, soluciones digitales personalizadas, contacto rápido"
+	/>
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:title" content="Contacto y Cotización de Proyectos Digitales — Krowen" />
