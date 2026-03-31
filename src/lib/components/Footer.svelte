@@ -41,7 +41,7 @@
 
     <div class="footer-col">
       <div class="col-title">Contacto</div>
-      <a href="mailto:hola@krowen.co">hola@krowen.co</a>
+      <a href="mailto:hola@krowen.lat">hola@krowen.lat</a>
       <a href="https://wa.me/573142115239" target="_blank">WhatsApp</a>
       <a href="https://calendly.com/krowen/30min" target="_blank">Agenda una llamada</a>
     </div>

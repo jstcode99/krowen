@@ -1,6 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition';
-	import Counter from '../../lib/components/Counter.svelte';
+	import Counter from '$lib/components/Counter.svelte';
 
 	const categories = ['Todos', 'App Móvil', 'Web App', 'E-commerce', 'IA & Chatbot', 'Sistema'];
 
@@ -104,30 +104,41 @@
 </script>
 
 <svelte:head>
-	<title>Proyectos — Krowen</title>
+	<title>Proyectos y Portafolio de Software — Krowen</title>
 	<meta
 		name="description"
-		content="Portafolio de proyectos desarrollados por Krowen: apps móviles, sistemas web, chatbots y más."
+		content="Descubre el portafolio de proyectos de Krowen: desarrollo de apps móviles, sistemas web, chatbots, UI/UX y soluciones digitales personalizadas para pymes, startups y CEOs en Colombia. Innovación tecnológica y resultados reales."
 	/>
+	<meta name="keywords" content="portafolio de proyectos, desarrollo web, apps móviles, sistemas empresariales, chatbots, diseño UI/UX, soluciones digitales, pymes Colombia, startups Colombia, innovación tecnológica, transformación digital, consultoría tecnológica, proyectos de software a medida, tecnología para CEOs, proyectos digitales exitosos" />
 
-	<!-- Open Graph -->
-	<meta property="og:title" content="Proyectos — Krowen" />
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title" content="Proyectos y Portafolio de Software — Krowen" />
 	<meta
 		property="og:description"
-		content="Portafolio de proyectos desarrollados por Krowen: apps móviles, sistemas web, chatbots y más."
+		content="Explora el portafolio de Krowen: apps móviles, sistemas web, chatbots y soluciones digitales a medida para pymes, startups y CEOs en Colombia. Innovación y tecnología aplicada a resultados reales."
 	/>
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://krowen.co/proyectos" />
-	<meta property="og:image" content="https://krowen.co/og-image.jpg" />
+	<meta property="og:url" content="https://krowen.lat/proyectos" />
+	<meta property="og:image" content="https://krowen.lat/krowen.webp" />
 
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Proyectos — Krowen" />
+	<!-- facebook -->
+	<meta name="facebook:card" content="summary_large_image" />
+	<meta name="facebook:title" content="Proyectos y Portafolio de Software — Krowen" />
 	<meta
-		name="twitter:description"
-		content="Portafolio de proyectos desarrollados por Krowen: apps móviles, sistemas web, chatbots y más."
+		name="facebook:description"
+		content="Portafolio de Krowen: apps móviles, sistemas web, chatbots, UI/UX y soluciones digitales para pymes, startups y CEOs en Colombia. Proyectos innovadores y resultados medibles."
 	/>
-	<meta name="twitter:image" content="https://krowen.co/og-image.jpg" />
+	<meta name="facebook:image" content="https://krowen.lat/krowen.webp" />
+
+	<!-- Instagram -->
+	<meta name="instagram:card" content="summary_large_image" />
+	<meta name="instagram:title" content="Proyectos y Portafolio de Software — Krowen" />
+	<meta
+		name="instagram:description"
+		content="Portafolio de Krowen: desarrollo de apps, sistemas web, chatbots y soluciones digitales para pymes, startups y CEOs en Colombia. Innovación tecnológica aplicada a resultados reales."
+	/>
+	<meta name="instagram:image" content="https://krowen.lat/krowen.webp" />
+	<meta name="instagram:site" content="@krowen.lat" />
 </svelte:head>
 
 <!-- HERO -->

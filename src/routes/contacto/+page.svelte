@@ -84,14 +84,14 @@
 	<meta property="og:url" content="https://krowen.lat/contacto" />
 	<meta property="og:image" content="https://krowen.lat/krowen.webp" />
 
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Contacto y Cotización de Proyectos Digitales — Krowen" />
+	<!-- facebook -->
+	<meta name="facebook:card" content="summary_large_image" />
+	<meta name="facebook:title" content="Contacto y Cotización de Proyectos Digitales — Krowen" />
 	<meta
-		name="twitter:description"
+		name="facebook:description"
 		content="Contáctanos para cotizar tu proyecto digital: desarrollo web, apps móviles, chatbots, UI/UX y sistemas a medida. Respuesta rápida para pymes, startups y CEOs en Colombia."
 	/>
-	<meta name="twitter:image" content="https://krowen.lat/krowen.webp" />
+	<meta name="facebook:image" content="https://krowen.lat/krowen.webp" />
 
 	<!-- Instagram -->
 	<meta name="instagram:card" content="summary_large_image" />

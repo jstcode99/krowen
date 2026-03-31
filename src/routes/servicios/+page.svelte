@@ -118,30 +118,41 @@
 </script>
 
 <svelte:head>
-	<title>Servicios — Krowen</title>
+	<title>Servicios de Software y Soluciones Digitales — Krowen</title>
 	<meta
 		name="description"
-		content="Desarrollo web, apps móviles, UI/UX, chatbots, sistemas a medida y consultoría digital."
+		content="En Krowen ofrecemos desarrollo web, apps móviles, diseño UI/UX, chatbots, sistemas a medida y consultoría digital. Soluciones tecnológicas para pymes, startups y CEOs en Colombia enfocadas en innovación, eficiencia y crecimiento digital."
 	/>
+	<meta name="keywords" content="servicios de software, desarrollo web a medida, apps móviles, diseño UI/UX, chatbots para negocios, sistemas empresariales, consultoría digital, pymes Colombia, startups Colombia, transformación digital, innovación tecnológica, soluciones digitales personalizadas, estrategias digitales, crecimiento digital, SEO técnico, ROI, tecnología para CEOs" />
 
-	<!-- Open Graph -->
-	<meta property="og:title" content="Servicios — Krowen" />
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title" content="Servicios de Software y Soluciones Digitales — Krowen" />
 	<meta
 		property="og:description"
-		content="Desarrollo web, apps móviles, UI/UX, chatbots, sistemas a medida y consultoría digital."
+		content="Krowen ofrece desarrollo web, apps móviles, diseño UI/UX, chatbots, sistemas a medida y consultoría digital para pymes, startups y CEOs en Colombia. Innovación tecnológica y soluciones digitales que impulsan crecimiento y eficiencia."
 	/>
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://krowen.co/servicios" />
-	<meta property="og:image" content="https://krowen.co/og-image.jpg" />
+	<meta property="og:url" content="https://krowen.lat/servicios" />
+	<meta property="og:image" content="https://krowen.lat/krowen.webp" />
 
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Servicios — Krowen" />
+	<!-- facebook -->
+	<meta name="facebook:card" content="summary_large_image" />
+	<meta name="facebook:title" content="Servicios de Software y Soluciones Digitales — Krowen" />
 	<meta
-		name="twitter:description"
-		content="Desarrollo web, apps móviles, UI/UX, chatbots, sistemas a medida y consultoría digital."
+		name="facebook:description"
+		content="Descubre nuestros servicios: desarrollo web, apps móviles, UI/UX, chatbots, sistemas a medida y consultoría digital. Soluciones innovadoras para pymes, startups y CEOs en Colombia."
 	/>
-	<meta name="twitter:image" content="https://krowen.co/og-image.jpg" />
+	<meta name="facebook:image" content="https://krowen.lat/krowen.webp" />
+
+	<!-- Instagram -->
+	<meta name="instagram:card" content="summary_large_image" />
+	<meta name="instagram:title" content="Servicios de Software y Soluciones Digitales — Krowen" />
+	<meta
+		name="instagram:description"
+		content="Krowen ofrece desarrollo web, apps móviles, UI/UX, chatbots, sistemas a medida y consultoría digital. Soluciones innovadoras para pymes, startups y CEOs en Colombia."
+	/>
+	<meta name="instagram:image" content="https://krowen.lat/krowen.webp" />
+	<meta name="instagram:site" content="@krowen.lat" />
 </svelte:head>
 
 <!-- PAGE HERO -->
