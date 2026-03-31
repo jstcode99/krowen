@@ -47,7 +47,7 @@
 
 	const info = [
 		{ icon: '◈', label: 'Email', value: 'hola@krowen.co', href: 'mailto:hola@krowen.co' },
-		{ icon: '◎', label: 'WhatsApp', value: '+57 300 123 4567', href: 'https://wa.me/573142115239' },
+		{ icon: '◎', label: 'WhatsApp', value: '+57 314 211 5239', href: 'https://wa.me/573142115239' },
 		{ icon: '◇', label: 'Ubicación', value: 'Villavicencio, Meta, Colombia', href: null },
 		{ icon: '◉', label: 'Horario', value: 'Lun–Vie 8am–6pm COT', href: null }
 	];
