@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	let menuOpen = false;
+	let menuOpen = $state(false);
 	let scrolled = $state(false);
 
 	// Detect scroll on client side
@@ -40,7 +40,7 @@
 		</li>
 	</ul>
 
-	<button class="hamburger" on:click={() => (menuOpen = !menuOpen)} aria-label="Menu">
+	<button class="hamburger" onclick={() => (menuOpen = !menuOpen)} aria-label="Menu">
 		<span class:open={menuOpen}></span>
 		<span class:open={menuOpen}></span>
 		<span class:open={menuOpen}></span>
@@ -50,7 +50,7 @@
 {#if menuOpen}
 	<div class="mobile-menu">
 		{#each links as link}
-			<a href={link.href} on:click={() => (menuOpen = false)}>{link.label}</a>
+			<a href={link.href} onclick={() => (menuOpen = false)}>{link.label}</a>
 		{/each}
 		<a href="https://calendly.com/krowen/30min" target="_blank" class="mobile-cta">
 			Agenda tu asesoría →

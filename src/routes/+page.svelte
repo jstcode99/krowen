@@ -634,13 +634,6 @@
 		gap: 8px;
 		z-index: 10;
 	}
-	.scroll-indicator span {
-		font-family: 'Space Mono', monospace;
-		font-size: 9px;
-		letter-spacing: 3px;
-		color: var(--text-dim);
-		writing-mode: vertical-lr;
-	}
 	.scroll-line {
 		width: 1px;
 		height: 60px;

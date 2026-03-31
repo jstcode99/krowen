@@ -192,7 +192,7 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label>Presupuesto estimado</label>
+						<span>Presupuesto estimado</span>
 						<div class="budget-options">
 							{#each budgets as b}
 								<button
