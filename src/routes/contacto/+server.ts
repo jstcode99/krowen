@@ -56,7 +56,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	});
 
 	await transporter.sendMail({
-		to: 'hola@krowen.co',
+		to: SMTP_USER,
 		from: `"Krowen" <${SMTP_USER}>`,
 		replyTo: email,
 		subject: `[Krowen] Nuevo contacto de ${name} — ${service}`,
