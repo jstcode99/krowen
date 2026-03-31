@@ -1,9 +1,9 @@
 <script>
 	import { onMount } from 'svelte';
 
-	let form = { name: '', email: '', company: '', service: '', budget: '', message: '' };
-	let sent = false;
-	let sending = false;
+	let form = $state({ name: '', email: '', company: '', service: '', budget: '', message: '' });
+	let sent = $state(false);
+	let sending = $state(false);
 
 	const services = [
 		'Desarrollo Web',
@@ -131,7 +131,7 @@
 					<div class="section-label">Formulario de contacto</div>
 					<h2 class="form-title">Cuéntanos tu proyecto</h2>
 				</div>
-				<form on:submit|preventDefault={handleSubmit} class="contact-form">
+				<form onsubmit={(e) => { e.preventDefault(); handleSubmit(); }} class="contact-form">
 					<div class="form-row">
 						<div class="form-group">
 							<label for="name">Nombre completo *</label>
@@ -182,7 +182,7 @@
 									type="button"
 									class="budget-opt"
 									class:active={form.budget === b}
-									on:click={() => (form.budget = b)}
+								onclick={() => (form.budget = b)}
 								>
 									{b}
 								</button>
