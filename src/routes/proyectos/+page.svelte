@@ -1,81 +1,82 @@
 <script>
-	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
+	import Counter from '../../lib/components/Counter.svelte';
+
 	const categories = ['Todos', 'App Móvil', 'Web App', 'E-commerce', 'IA & Chatbot', 'Sistema'];
 
-	let activeCategory = 'Todos';
-
-	const projects = [
+	const projects = $state([
 		{
+			id: 1,
 			name: 'ReferidosCO',
 			category: 'App Móvil',
 			year: '2024',
 			desc: 'Plataforma de referidos con sistema de recompensas en tiempo real. Los usuarios ganan puntos canjeables por referir amigos a servicios.',
 			stack: ['React Native', 'Node.js', 'MongoDB'],
 			color: '#c8ff00',
-			status: 'Producción',
-			results: ['10k+ usuarios activos', '95% retención mensual', 'Lanzado en 3 meses']
+			status: 'Producción'
 		},
 		{
+			id: 2,
 			name: 'Partner Chat',
 			category: 'App Móvil',
 			year: '2024',
 			desc: 'App de mensajería instantánea para equipos de trabajo distribuidos con canales, hilos y compartición de archivos.',
 			stack: ['Flutter', 'Firebase', 'WebSockets'],
 			color: '#ff6b35',
-			status: 'Producción',
-			results: ['500+ empresas registradas', 'Mensajería en tiempo real', 'iOS & Android']
+			status: 'Producción'
 		},
 		{
+			id: 3,
 			name: 'TurnoExpress',
 			category: 'Sistema',
 			year: '2023',
 			desc: 'Sistema de turnos y reservas para clínicas, peluquerías y consultorios. Reduce tiempos de espera y optimiza la agenda.',
 			stack: ['SvelteKit', 'PostgreSQL', 'Stripe'],
 			color: '#00d4ff',
-			status: 'Producción',
-			results: ['-60% tiempo de espera', '200+ negocios', 'Multi-sede']
+			status: 'Producción'
 		},
 		{
+			id: 4,
 			name: 'NómadaShop',
 			category: 'E-commerce',
 			year: '2023',
 			desc: 'Tienda en línea completa con carrito de compras, pasarela de pago PSE, gestión de inventario y panel de administración.',
 			stack: ['Next.js', 'Stripe', 'Prisma'],
 			color: '#ff3d9a',
-			status: 'Producción',
-			results: ['$50M+ en ventas', '1500+ productos', 'Pago PSE integrado']
+			status: 'Producción'
 		},
 		{
+			id: 5,
 			name: 'KrowBot',
 			category: 'IA & Chatbot',
 			year: '2024',
 			desc: 'Asistente virtual con IA para soporte y ventas automatizadas. Integrado con WhatsApp Business y el CRM del cliente.',
 			stack: ['OpenAI GPT-4', 'Python', 'WhatsApp API'],
 			color: '#a78bfa',
-			status: 'Producción',
-			results: ['+40% conversiones', '24/7 disponibilidad', '3 idiomas']
+			status: 'Producción'
 		},
 		{
+			id: 6,
 			name: 'HRFlow',
 			category: 'Sistema',
 			year: '2023',
 			desc: 'Sistema de gestión de recursos humanos con nómina, control de asistencia, evaluaciones de desempeño y reportes automáticos.',
 			stack: ['Django', 'React', 'PostgreSQL'],
 			color: '#fbbf24',
-			status: 'Producción',
-			results: ['200+ empleados gestionados', 'Nómina automática', 'Cumplimiento legal CO']
+			status: 'Producción'
 		},
 		{
+			id: 7,
 			name: 'BodegApp',
 			category: 'Web App',
 			year: '2024',
 			desc: 'Dashboard de control de inventario para bodegas con alertas de stock mínimo, trazabilidad de productos y reportes en tiempo real.',
 			stack: ['SvelteKit', 'Supabase', 'Chart.js'],
 			color: '#34d399',
-			status: 'En desarrollo',
-			results: ['Alertas automáticas', 'Trazabilidad total', 'Multi-usuario']
+			status: 'En desarrollo'
 		},
 		{
+			id: 8,
 			name: 'VetOnline',
 			category: 'Web App',
 			year: '2024',
@@ -85,28 +86,20 @@
 			status: 'Producción',
 			results: ['500+ consultas/mes', 'Video en tiempo real', 'Historial digital']
 		}
-	];
+	]);
 
-	onMount(() => {
-		const reveals = document.querySelectorAll('.reveal');
-		const obs = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add('visible');
-					}
-				});
-			},
-			{ threshold: 0.1 }
-		);
+	let filter = $state('Todos');
 
-		reveals.forEach((el) => obs.observe(el));
+	let filteredItems = $derived(
+		filter === 'Todos' ? projects : projects.filter((p) => p.category === filter)
+	);
 
-		return () => obs.disconnect();
-	});
-
-	const filtered = $derived(
-		activeCategory === 'Todos' ? projects : projects.filter((p) => p.category === activeCategory)
+	let counts = $derived(
+		categories.reduce((acc, cat) => {
+			acc[cat] =
+				cat === 'Todos' ? projects.length : projects.filter((p) => p.category === cat).length;
+			return acc;
+		}, {})
 	);
 </script>
 
@@ -141,23 +134,23 @@
 <section class="page-hero">
 	<div class="ph-bg-text">Work</div>
 	<div class="ph-content">
-		<div class="section-label">Portafolio</div>
-		<h1 class="ph-title">Proyectos<br /><span class="ac">Recientes</span></h1>
+		<div class="section-label enter" style="--delay: 0.2s">Portafolio</div>
+		<h1 class="ph-title enter" style="--delay: 0.3s">Proyectos<br /><span class="ac">Recientes</span></h1>
 		<p class="ph-sub">
 			Construcciones reales, con impacto real. Cada proyecto es una historia de colaboración.
 		</p>
 	</div>
 	<div class="ph-stats">
 		<div class="ph-stat">
-			<div class="ps-num">50+</div>
+			<div class="ps-num"><Counter value={30} suffix="+" /></div>
 			<div class="ps-lbl">Proyectos</div>
 		</div>
 		<div class="ph-stat">
-			<div class="ps-num">3+</div>
+			<div class="ps-num"><Counter value={5} suffix="+" /></div>
 			<div class="ps-lbl">Años</div>
 		</div>
 		<div class="ph-stat">
-			<div class="ps-num">100%</div>
+			<div class="ps-num"><Counter value={100} suffix="%" duration={1000} /></div>
 			<div class="ps-lbl">Satisfacción</div>
 		</div>
 	</div>
@@ -166,57 +159,62 @@
 <!-- FILTER + GRID -->
 <section class="projects-section">
 	<div class="filters">
-		{#each categories as cat}
+		{#each categories as category}
 			<button
 				class="filter-btn"
-				class:active={activeCategory === cat}
-				on:click={() => (activeCategory = cat)}
+				class:active={filter === category}
+				onclick={() => (filter = category)}
 			>
-				{cat}
-				{#if cat !== 'Todos'}
-					<span class="filter-count">{projects.filter((p) => p.category === cat).length}</span>
-				{:else}
-					<span class="filter-count">{projects.length}</span>
-				{/if}
+				{category}
+				<span class="filter-count">{counts[category]}</span>
 			</button>
 		{/each}
 	</div>
+	<p style="padding:2px">Total: {filteredItems.length}</p>
 
 	<div class="projects-grid">
-		{#each filtered as p, i (p.name)}
-			<div class="project-card reveal" style="--c:{p.color}">
+		{#each filteredItems as item, index}
+			<div
+				class="project-card"
+				style="--c:{item.color}"
+				in:fade={{ duration: 400 + index * 5 }}
+				out:fade={{ duration: 350 - index * 5 }}
+			>
 				<div class="pc-top">
 					<div class="pc-header">
-						<span class="pc-cat" style="color:{p.color}">{p.category}</span>
-						<span class="pc-status" class:prod={p.status === 'Producción'}>{p.status}</span>
+						<span class="pc-cat" style="color:{item.color}">{item.category}</span>
+						<span class="pc-status" class:prod={item.status === 'Producción'}>{item.status}</span>
 					</div>
-					<h3 class="pc-name">{p.name}</h3>
-					<p class="pc-desc">{p.desc}</p>
+					<h3 class="pc-name">{item.name}</h3>
+					<p class="pc-desc">{item.desc}</p>
 				</div>
 				<div class="pc-bottom">
 					<div class="pc-results">
-						{#each p.results as r}
+						{#each item.results as r}
 							<span class="pc-result">✦ {r}</span>
 						{/each}
 					</div>
 					<div class="pc-stack">
-						{#each p.stack as t}
+						{#each item.stack as t}
 							<span class="pc-tech">{t}</span>
 						{/each}
 					</div>
 					<div class="pc-footer">
-						<span class="pc-year">{p.year}</span>
+						<span class="pc-year">{item.year}</span>
 						<a href="/contacto" class="pc-cta">Proyecto similar →</a>
 					</div>
 				</div>
-				<div class="pc-accent" style="background:{p.color}"></div>
+				<div class="pc-accent" style="background:{item.color}"></div>
 			</div>
 		{/each}
 	</div>
+	{#if filteredItems.length === 0}
+		<p>No hay proyectos en esta categoría</p>
+	{/if}
 </section>
 
 <!-- CTA -->
-<section class="cta-section">
+<section class="cta-section enter">
 	<div class="section-label" style="color:var(--black)"><span></span>¿El tuyo es el siguiente?</div>
 	<h2 class="cta-title">Cuéntanos tu<br />proyecto</h2>
 	<div class="cta-actions">
