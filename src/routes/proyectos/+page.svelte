@@ -214,7 +214,7 @@
 </section>
 
 <!-- CTA -->
-<section class="cta-section enter">
+<section class="cta-section reveal">
 	<div class="section-label" style="color:var(--black)"><span></span>¿El tuyo es el siguiente?</div>
 	<h2 class="cta-title">Cuéntanos tu<br />proyecto</h2>
 	<div class="cta-actions">
