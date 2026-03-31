@@ -134,25 +134,6 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://krowen.lat/servicios" />
 	<meta property="og:image" content="https://krowen.lat/krowen.webp" />
-
-	<!-- facebook -->
-	<meta name="facebook:card" content="summary_large_image" />
-	<meta name="facebook:title" content="Servicios de Software y Soluciones Digitales — Krowen" />
-	<meta
-		name="facebook:description"
-		content="Descubre nuestros servicios: desarrollo web, apps móviles, UI/UX, chatbots, sistemas a medida y consultoría digital. Soluciones innovadoras para pymes, startups y CEOs en Colombia."
-	/>
-	<meta name="facebook:image" content="https://krowen.lat/krowen.webp" />
-
-	<!-- Instagram -->
-	<meta name="instagram:card" content="summary_large_image" />
-	<meta name="instagram:title" content="Servicios de Software y Soluciones Digitales — Krowen" />
-	<meta
-		name="instagram:description"
-		content="Krowen ofrece desarrollo web, apps móviles, UI/UX, chatbots, sistemas a medida y consultoría digital. Soluciones innovadoras para pymes, startups y CEOs en Colombia."
-	/>
-	<meta name="instagram:image" content="https://krowen.lat/krowen.webp" />
-	<meta name="instagram:site" content="@krowen.lat" />
 </svelte:head>
 
 <!-- PAGE HERO -->

@@ -120,25 +120,6 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://krowen.lat/proyectos" />
 	<meta property="og:image" content="https://krowen.lat/krowen.webp" />
-
-	<!-- facebook -->
-	<meta name="facebook:card" content="summary_large_image" />
-	<meta name="facebook:title" content="Proyectos y Portafolio de Software — Krowen" />
-	<meta
-		name="facebook:description"
-		content="Portafolio de Krowen: apps móviles, sistemas web, chatbots, UI/UX y soluciones digitales para pymes, startups y CEOs en Colombia. Proyectos innovadores y resultados medibles."
-	/>
-	<meta name="facebook:image" content="https://krowen.lat/krowen.webp" />
-
-	<!-- Instagram -->
-	<meta name="instagram:card" content="summary_large_image" />
-	<meta name="instagram:title" content="Proyectos y Portafolio de Software — Krowen" />
-	<meta
-		name="instagram:description"
-		content="Portafolio de Krowen: desarrollo de apps, sistemas web, chatbots y soluciones digitales para pymes, startups y CEOs en Colombia. Innovación tecnológica aplicada a resultados reales."
-	/>
-	<meta name="instagram:image" content="https://krowen.lat/krowen.webp" />
-	<meta name="instagram:site" content="@krowen.lat" />
 </svelte:head>
 
 <!-- HERO -->

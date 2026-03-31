@@ -206,25 +206,6 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://krowen.lat/" />
 	<meta property="og:image" content="https://krowen.lat/krowen.webp" />
-
-	<!-- linkedin -->
-	<meta name="linkedin:card" content="summary_large_image" />
-	<meta name="linkedin:title" content="Krowen — Agencia de software y soluciones digitales para pymes y startups en Colombia" />
-	<meta
-		name="linkedin:description"
-		content="Krowen ofrece desarrollo de software a medida, apps, sitios web, chatbots, SEO técnico y estrategias digitales para pymes y startups en Colombia con enfoque en crecimiento, tráfico cualificado y ROI."
-	/>
-	<meta name="linkedin:image" content="https://krowen.lat/krowen.webp" />
-
-	<!-- Instagram -->
-	<meta name="instagram:card" content="summary_large_image" />
-	<meta name="instagram:title" content="Krowen — Agencia de software y soluciones digitales para pymes y startups en Colombia" />
-	<meta
-		name="instagram:description"
-		content="Krowen ofrece desarrollo de software a medida, apps, sitios web, chatbots, SEO técnico y estrategias digitales para pymes y startups en Colombia con enfoque en crecimiento, tráfico cualificado y ROI."
-	/>
-	<meta name="instagram:image" content="https://krowen.lat/krowen.webp" />
-	<meta name="instagram:site" content="@krowen.lat" />
 </svelte:head>
 
 <!-- ═══════ HERO ═══════ -->
