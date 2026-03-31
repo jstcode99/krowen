@@ -4,6 +4,7 @@
 	let form = $state({ name: '', email: '', company: '', service: '', budget: '', message: '' });
 	let sent = $state(false);
 	let sending = $state(false);
+	let error = $state('');
 
 	const services = [
 		'Desarrollo Web',
@@ -24,9 +25,24 @@
 
 	async function handleSubmit() {
 		sending = true;
-		await new Promise((r) => setTimeout(r, 1500));
-		sent = true;
-		sending = false;
+		error = '';
+		try {
+			const res = await fetch('/contacto', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify(form)
+			});
+			if (!res.ok) {
+				const data = await res.json();
+				error = data.error ?? 'Error al enviar. Intenta nuevamente.';
+			} else {
+				sent = true;
+			}
+		} catch {
+			error = 'Error de conexión. Intenta nuevamente.';
+		} finally {
+			sending = false;
+		}
 	}
 
 	const info = [
@@ -199,6 +215,9 @@
 							required
 						></textarea>
 					</div>
+					{#if error}
+						<p class="form-error">{error}</p>
+					{/if}
 					<button type="submit" class="submit-btn" disabled={sending}>
 						{#if sending}
 							<span class="sending-dots">Enviando<span>.</span><span>.</span><span>.</span></span>
@@ -451,6 +470,16 @@
 		border-color: var(--accent);
 		color: var(--accent);
 		background: rgba(200, 255, 0, 0.05);
+	}
+
+	.form-error {
+		color: #ff4d4d;
+		font-family: 'Space Mono', monospace;
+		font-size: 11px;
+		letter-spacing: 1px;
+		padding: 12px 16px;
+		border: 1px solid #ff4d4d40;
+		background: #ff4d4d10;
 	}
 
 	.submit-btn {
