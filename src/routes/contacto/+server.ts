@@ -40,7 +40,7 @@ export const POST: RequestHandler = async ({ request }) => {
 				</tr>
 			</table>
 			<p style="padding:16px 24px;background:#000;color:#555;font-size:11px;margin:0">
-				Enviado desde krowen.co/contacto
+				Enviado desde krowen.lat/contacto
 			</p>
 		</div>
 	`;

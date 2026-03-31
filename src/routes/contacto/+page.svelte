@@ -46,7 +46,7 @@
 	}
 
 	const info = [
-		{ icon: '◈', label: 'Email', value: 'hola@krowen.co', href: 'mailto:hola@krowen.co' },
+		{ icon: '◈', label: 'Email', value: 'hola@krowen.lat', href: 'mailto:hola@krowen.lat' },
 		{ icon: '◎', label: 'WhatsApp', value: '+57 314 211 5239', href: 'https://wa.me/573142115239' },
 		{ icon: '◇', label: 'Ubicación', value: 'Villavicencio, Meta, Colombia', href: null },
 		{ icon: '◉', label: 'Horario', value: 'Lun–Vie 8am–6pm COT', href: null }
@@ -67,30 +67,41 @@
 </script>
 
 <svelte:head>
-	<title>Contacto — Krowen</title>
+	<title>Contacto y Cotización de Proyectos Digitales — Krowen</title>
 	<meta
 		name="description"
-		content="Contáctanos para cotizar tu proyecto digital. Respondemos en menos de 24 horas."
+		content="Contáctanos para cotizar tu proyecto digital: desarrollo web, apps móviles, chatbots, UI/UX y sistemas a medida. Respuesta rápida en menos de 24 horas para pymes, startups y CEOs en Colombia."
 	/>
+	<meta name="keywords" content="contacto agencia de software, cotización proyectos digitales, desarrollo web, apps móviles, chatbots, UI/UX, sistemas a medida, consultoría digital, pymes Colombia, startups Colombia, CEO, innovación tecnológica, transformación digital, soluciones digitales personalizadas, contacto rápido" />
 
-	<!-- Open Graph -->
-	<meta property="og:title" content="Contacto — Krowen" />
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title" content="Contacto y Cotización de Proyectos Digitales — Krowen" />
 	<meta
 		property="og:description"
-		content="Contáctanos para cotizar tu proyecto digital. Respondemos en menos de 24 horas."
+		content="Contáctanos para cotizar tu proyecto digital: desarrollo web, apps móviles, chatbots, UI/UX y sistemas a medida. Atendemos pymes, startups y CEOs en Colombia con soluciones innovadoras y rápidas."
 	/>
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://krowen.co/contacto" />
-	<meta property="og:image" content="https://krowen.co/og-image.jpg" />
+	<meta property="og:url" content="https://krowen.lat/contacto" />
+	<meta property="og:image" content="https://krowen.lat/krowen.webp" />
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Contacto — Krowen" />
+	<meta name="twitter:title" content="Contacto y Cotización de Proyectos Digitales — Krowen" />
 	<meta
 		name="twitter:description"
-		content="Contáctanos para cotizar tu proyecto digital. Respondemos en menos de 24 horas."
+		content="Contáctanos para cotizar tu proyecto digital: desarrollo web, apps móviles, chatbots, UI/UX y sistemas a medida. Respuesta rápida para pymes, startups y CEOs en Colombia."
 	/>
-	<meta name="twitter:image" content="https://krowen.co/og-image.jpg" />
+	<meta name="twitter:image" content="https://krowen.lat/krowen.webp" />
+
+	<!-- Instagram -->
+	<meta name="instagram:card" content="summary_large_image" />
+	<meta name="instagram:title" content="Contacto y Cotización de Proyectos Digitales — Krowen" />
+	<meta
+		name="instagram:description"
+		content="Contáctanos para cotizar tu proyecto digital: desarrollo web, apps móviles, chatbots, UI/UX y sistemas a medida. Atendemos pymes, startups y CEOs en Colombia con soluciones innovadoras y rápidas."
+	/>
+	<meta name="instagram:image" content="https://krowen.lat/krowen.webp" />
+	<meta name="instagram:site" content="@krowen.lat" />
 </svelte:head>
 
 <!-- HERO -->

@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://krowen.co/sitemap.xml
+Sitemap: https://krowen.lat/sitemap.xml

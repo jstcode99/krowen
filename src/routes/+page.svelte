@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Counter from '../lib/components/Counter.svelte';
+	import Counter from '$lib/components/Counter.svelte';
 	import { fade } from 'svelte/transition';
 
 	let scrollY = 0;
@@ -190,30 +190,41 @@
 </script>
 
 <svelte:head>
-	<title>Krowen — Desarrolla tus ideas con nosotros</title>
+	<title>Krowen — Agencia de software y soluciones digitales en Colombia</title>
 	<meta
 		name="description"
-		content="Creamos productos digitales que resuelven problemas y generan impacto. Apps, sitios web, chatbots y sistemas a la medida."
+		content="Krowen es una agencia de software, marketing digital y soluciones tecnológicas de vanguardia en Colombia. Diseñamos apps móviles, desarrollo web a medida, chatbots, sistemas empresariales e implementamos SEO técnico, estrategias digitales data‑driven y transformación digital para pymes, startups y CEOs que buscan crecimiento orgánico, conversión y ROI real."
 	/>
+	<meta name="keywords" content="agencia de software, desarrollo de software a medida, desarrollo web y mobile, apps móviles, soluciones digitales, SEO técnico, SEO local, marketing digital, pymes Colombia, startups Colombia, estrategias data‑driven, transformación digital, innovación tecnológica, inteligencia artificial, chatbots para negocios, crecimiento orgánico, tráfico cualificado, conversión web, ROI digital, consultoría tecnológica, diseño UX/UI, consultoría para CEOs" />
 
-	<!-- Open Graph -->
-	<meta property="og:title" content="Krowen — Desarrolla tus ideas con nosotros" />
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title" content="Krowen — Agencia de software y soluciones digitales en Colombia" />
 	<meta
 		property="og:description"
-		content="Creamos productos digitales que resuelven problemas y generan impacto. Apps, sitios web, chatbots y sistemas a la medida."
+		content="Somos una agencia de software y soluciones digitales en Colombia: apps móviles, web, chatbots, SEO técnico, estrategias data‑driven y transformación digital para pymes, startups y CEOs que buscan crecimiento orgánico y resultados reales."
 	/>
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://krowen.co/" />
-	<meta property="og:image" content="https://krowen.co/og-image.jpg" />
+	<meta property="og:url" content="https://krowen.lat/" />
+	<meta property="og:image" content="https://krowen.lat/krowen.webp" />
 
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Krowen — Desarrolla tus ideas con nosotros" />
+	<!-- linkedin -->
+	<meta name="linkedin:card" content="summary_large_image" />
+	<meta name="linkedin:title" content="Krowen — Agencia de software y soluciones digitales para pymes y startups en Colombia" />
 	<meta
-		name="twitter:description"
-		content="Creamos productos digitales que resuelven problemas y generan impacto. Apps, sitios web, chatbots y sistemas a la medida."
+		name="linkedin:description"
+		content="Krowen ofrece desarrollo de software a medida, apps, sitios web, chatbots, SEO técnico y estrategias digitales para pymes y startups en Colombia con enfoque en crecimiento, tráfico cualificado y ROI."
 	/>
-	<meta name="twitter:image" content="https://krowen.co/og-image.jpg" />
+	<meta name="linkedin:image" content="https://krowen.lat/krowen.webp" />
+
+	<!-- Instagram -->
+	<meta name="instagram:card" content="summary_large_image" />
+	<meta name="instagram:title" content="Krowen — Agencia de software y soluciones digitales para pymes y startups en Colombia" />
+	<meta
+		name="instagram:description"
+		content="Krowen ofrece desarrollo de software a medida, apps, sitios web, chatbots, SEO técnico y estrategias digitales para pymes y startups en Colombia con enfoque en crecimiento, tráfico cualificado y ROI."
+	/>
+	<meta name="instagram:image" content="https://krowen.lat/krowen.webp" />
+	<meta name="instagram:site" content="@krowen.lat" />
 </svelte:head>
 
 <!-- ═══════ HERO ═══════ -->
@@ -389,6 +400,7 @@
 		{#each testimonials as _, i}
 			<button
 				class="testi-dot"
+				aria-label="Testimonio {i + 1}"
 				class:active={i === activeTestimonial}
 				onclick={() => (activeTestimonial = i)}
 			></button>
