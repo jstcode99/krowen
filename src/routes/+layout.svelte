@@ -2,6 +2,8 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import WhatsApp from '$lib/components/WhatsApp.svelte';
+	import Cursor from '$lib/components/Cursor.svelte';
+	import Reveal from '$lib/components/Reveal.svelte';
 	import '$lib/styles/global.css';
 
 	let { children } = $props();
@@ -9,8 +11,10 @@
 
 <a href="#main-content" class="skip-link">Saltar al contenido</a>
 <Navbar />
+<Cursor />
+<Reveal />
 <div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
 
 {@render children()}
 <Footer />

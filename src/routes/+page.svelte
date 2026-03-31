@@ -137,55 +137,7 @@
 		{ class: 'float-line-h', speed: 0.55 }
 	];
 
-	onMount(() => {
-		mounted = true;
-
-		// Scroll listener
-		const handleScroll = () => {
-			scrollY = window.scrollY;
-		};
-		window.addEventListener('scroll', handleScroll, { passive: true });
-
-		// Reveal observer
-		const reveals = document.querySelectorAll('.reveal');
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((e) => {
-					if (e.isIntersecting) e.target.classList.add('visible');
-				});
-			},
-			{ threshold: 0.12 }
-		);
-		reveals.forEach((el) => observer.observe(el));
-
-		// Auto-rotate testimonials
-		const interval = setInterval(() => {
-			activeTestimonial = (activeTestimonial + 1) % testimonials.length;
-		}, 5000);
-
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-			observer.disconnect();
-			clearInterval(interval);
-		};
-	});
-
-	onMount(() => {
-		const cursor = document.getElementById('cursor');
-		const ring = document.getElementById('cursorRing');
-
-		if (!cursor || !ring) return;
-
-		document.addEventListener('mousemove', (e) => {
-			cursor.style.left = e.clientX + 'px';
-			cursor.style.top = e.clientY + 'px';
-
-			ring.style.left = e.clientX + 'px';
-			ring.style.top = e.clientY + 'px';
-		});
-	});
-
-	function getTranslate(speed) {
+	function getTranslate(speed: number) {
 		return `translateY(${scrollY * speed}px)`;
 	}
 
