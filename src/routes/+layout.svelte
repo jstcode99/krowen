@@ -74,7 +74,7 @@
 
 	:global(body) {
 		/* applies to <body> */
-		cursor: none;
+		cursor: pointer;
 	}
 
 	:global(.cursor) {
