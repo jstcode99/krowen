@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=Space+Mono:ital@0;1&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--black: #0a0a0a;
+	--white: #f0ede6;
+	--accent: #c8ff00;
+	--gray: #141414;
+	--mid: #222;
+	--border: #2a2a2a;
+	--text-dim: #666;
+	--font-display: 'Bebas Neue', sans-serif;
+	--font-body: 'Syne', sans-serif;
+	--font-mono: 'Space Mono', monospace;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--black);
+	color: var(--white);
+	font-family: var(--font-body);
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* UTILS */
+.section-label {
+	font-family: var(--font-mono);
+	font-size: 10px;
+	letter-spacing: 4px;
+	color: var(--accent);
+	text-transform: uppercase;
+	margin-bottom: 16px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.section-label::before {
+	content: '';
+	width: 24px;
+	height: 1px;
+	background: var(--accent);
+}
+
+.section-title {
+	font-family: var(--font-display);
+	font-size: clamp(48px, 6vw, 96px);
+	line-height: 0.95;
+	color: var(--white);
+	margin-bottom: 60px;
+}
+
+.btn-primary {
+	display: inline-block;
+	background: var(--accent);
+	color: var(--black);
+	padding: 16px 36px;
+	font-family: var(--font-mono);
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 700;
+	cursor: pointer;
+	border: none;
+	transition:
+		transform 0.2s,
+		box-shadow 0.2s;
+}
+.btn-primary:hover {
+	transform: translate(-2px, -2px);
+	box-shadow: 4px 4px 0 rgba(200, 255, 0, 0.25);
+}
+
+.btn-ghost {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	color: var(--white);
+	font-family: var(--font-mono);
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	opacity: 0.6;
+	transition: opacity 0.2s;
+}
+.btn-ghost:hover {
+	opacity: 1;
+}
+.btn-ghost::after {
+	content: '→';
+	transition: transform 0.2s;
+}
+.btn-ghost:hover::after {
+	transform: translateX(4px);
+}
+
+/* REVEAL */
+.reveal {
+	opacity: 0;
+	transform: translateY(40px);
+	transition:
+		opacity 0.8s ease,
+		transform 0.8s ease;
+}
+.reveal.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+.reveal-d1 {
+	transition-delay: 0.1s;
+}
+.reveal-d2 {
+	transition-delay: 0.2s;
+}
+.reveal-d3 {
+	transition-delay: 0.3s;
+}
+.reveal-d4 {
+	transition-delay: 0.4s;
+}
+
+/* SKIP LINK */
+.skip-link {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background: var(--accent);
+	color: var(--black);
+	padding: 8px 16px;
+	font-family: var(--font-mono);
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	z-index: 1000;
+}
+.skip-link:focus {
+	top: 0;
+}
