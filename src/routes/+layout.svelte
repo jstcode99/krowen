@@ -5,6 +5,7 @@
 	import Cursor from '$lib/components/Cursor.svelte';
 	import Reveal from '$lib/components/Reveal.svelte';
 	import '$lib/styles/global.css';
+	import '$lib/styles/layout.css';
 
 	let { children } = $props();
 </script>
