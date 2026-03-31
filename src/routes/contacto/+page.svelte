@@ -47,7 +47,7 @@
 
 	const info = [
 		{ icon: '◈', label: 'Email', value: 'hola@krowen.co', href: 'mailto:hola@krowen.co' },
-		{ icon: '◎', label: 'WhatsApp', value: '+57 300 123 4567', href: 'https://wa.me/573001234567' },
+		{ icon: '◎', label: 'WhatsApp', value: '+57 300 123 4567', href: 'https://wa.me/573142115239' },
 		{ icon: '◇', label: 'Ubicación', value: 'Villavicencio, Meta, Colombia', href: null },
 		{ icon: '◉', label: 'Horario', value: 'Lun–Vie 8am–6pm COT', href: null }
 	];
@@ -252,7 +252,7 @@
 				<div class="sb-title">WhatsApp directo</div>
 				<p class="sb-text">Para consultas rápidas o si prefieres chatear, escríbenos directo.</p>
 				<a
-					href="https://wa.me/573001234567?text=Hola%20Krowen%2C%20quiero%20cotizar%20un%20proyecto"
+					href="https://wa.me/573142115239?text=Hola%20Krowen%2C%20quiero%20cotizar%20un%20proyecto"
 					target="_blank"
 					class="wa-cta"
 				>

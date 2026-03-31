@@ -1,6 +1,6 @@
 <script>
 	let {
-		phone = '573001234567',
+		phone = '573142115239',
 		message = '¡Hola Krowen! Quiero más información sobre sus servicios.',
 		showTooltip = $bindable(false)
 	} = $props();

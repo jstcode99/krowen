@@ -19,7 +19,7 @@
 
 {@render children()}
 <Footer />
-<WhatsApp phone="573001234567" />
+<WhatsApp phone="573142115239" />
 
 <style>
 	:root {
