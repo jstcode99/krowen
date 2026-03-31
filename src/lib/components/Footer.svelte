@@ -44,13 +44,11 @@
       <a href="mailto:hola@krowen.co">hola@krowen.co</a>
       <a href="https://wa.me/573142115239" target="_blank">WhatsApp</a>
       <a href="https://calendly.com/krowen/30min" target="_blank">Agenda una llamada</a>
-      <a href="https://instagram.com/krowen" target="_blank">Instagram</a>
-      <a href="https://linkedin.com/company/krowen" target="_blank">LinkedIn</a>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <span>© 2025 Krowen™ — Villavicencio, Colombia</span>
+    <span>© 2026 Krowen™ — Colombia</span>
     <span>Hecho con <span class="accent">✦</span> y mucho código</span>
   </div>
 </footer>
